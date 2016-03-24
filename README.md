@@ -26,7 +26,7 @@ Tabs, indentation, comments, etc. are my personal preference. It's more importan
 ### Accessibility Testing
 This page has been tested via the Chrome DevTools [Accessibility Audit](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en), as well as  [WebAIM's WAVE](http://wave.webaim.org/extension/) and [Deque System's aXe](http://www.deque.com/products/axe/#aXeExtensions) accessibility testing browser extensions, as well as [Khan Academy's tota11y bookmarklet](http://khan.github.io/tota11y/). 
 
-Specific answers to specific warnings issues are avaiable on the [repo's Wiki](https://github.com/ericwbailey/accessible-html-content-patterns/wiki).
+Answers to specific warnings issues are available on the [repo's Wiki](https://github.com/ericwbailey/accessible-html-content-patterns/wiki).
 
 **A note about [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA):** ARIA is a band-aid and not a cure-all. Use semantic markup whenever possible.
 
