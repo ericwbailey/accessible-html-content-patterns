@@ -9,10 +9,10 @@ Use this as a starting point when creating your base markup and styling for a st
 
 
 ## Installation
-There are a few ways to work with this repo:
+There are a couple of ways to work with this repo:
 
 - Clone it in its entirety: `https://github.com/ericwbailey/accessible-html-content-patterns.git`
-- Download a zipped copy
+- [Download a zipped copy](https://github.com/ericwbailey/accessible-html-content-patterns/archive/master.zip)
 
 
 ## Code Concerns
@@ -67,4 +67,4 @@ Contributions are welcome! Submit a [Pull Request](https://github.com/ericwbaile
 
 
 ## License
-MIT License
+[MIT License](https://raw.githubusercontent.com/ericwbailey/accessible-html-content-patterns/master/LICENSE)
