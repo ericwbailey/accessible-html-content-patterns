@@ -51,7 +51,7 @@ This page has been tested via the Chrome DevTools [Accessibility Audit](https://
 
 
 ## Contributing
-Contributions are welcome! Submit a [Pull Request](https://github.com/ericwbailey/accessible-html-content-patterns/pulls) or [raise an issue](https://github.com/ericwbailey/accessible-html-content-patterns/issues).
+Contributions are welcome! Submit a [Pull Request](https://github.com/ericwbailey/accessible-html-content-patterns/pulls) or [raise an Issue](https://github.com/ericwbailey/accessible-html-content-patterns/issues).
 
 
 ## Credits, Attribution, and Inspiration
