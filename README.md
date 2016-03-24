@@ -45,7 +45,7 @@ This page has been tested via the Chrome DevTools [Accessibility Audit](https://
 | Error | Reasoning |
 | :---- | :-------- |
 | Suspicious link text. Link text contains extraneous text or may not make sense out of context. | This is good advice. I'm going with brevity in the document for the sake of expediency, but don't do this in a production environment. |
-| Redundant link. Adjacent links go to the same URL. | Links have been given a null value. This error shouldn't appear when actual link `href` values have been indcluded.  |
+| Redundant link. Adjacent links go to the same URL. | Links have been given a null value. This error shouldn't appear when actual link `href` values have been included. |
 
 **A note about [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA):** ARIA is a band-aid and not a cure-all. Use semantic markup whenever possible.
 
