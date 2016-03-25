@@ -1,5 +1,5 @@
 # Accessible HTML Content Patterns
-A collection of the full [HTML5 Doctor Element Index](http://html5doctor.com/element-index/), minus the `<details>`, `<summary>`, `<command>`, and `<menu>` tags (which have poor browser support), as well as common markup patterns for quick reference.
+A collection of the full [HTML5 Doctor Element Index](http://html5doctor.com/element-index/), minus the `<details>`, `<summary>`, `<command>`, and `<menu>` tags (which have [poor browser support](http://caniuse.com/#search=menu)), as well as common markup patterns for quick reference.
 
 
 ## Motivation
