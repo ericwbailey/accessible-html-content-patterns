@@ -33,7 +33,11 @@ Answers to specific warnings issues are available on the [repo's Wiki](https://g
 
 
 ## Contributing
-Contributions are welcome! Submit a [Pull Request](https://github.com/ericwbailey/accessible-html-content-patterns/pulls) or [raise an Issue](https://github.com/ericwbailey/accessible-html-content-patterns/issues).
+Contributions are welcome!
+
+- Submit a [Pull Request](https://github.com/ericwbailey/accessible-html-content-patterns/pulls)
+- [Raise an Issue](https://github.com/ericwbailey/accessible-html-content-patterns/issues)
+- Comment in-context on [Genuis](http://genius.com/web-annotator)
 
 
 ## Credits, Attribution, and Inspiration
