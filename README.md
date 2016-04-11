@@ -50,6 +50,7 @@ Contributions are welcome!
 - [Baymard Institute](http://baymard.com/)'s [Touch Keyboard Types](http://baymard.com/labs/touch-keyboard-types)
 - [Chrome Autofill](https://developers.google.com/web/updates/2015/06/checkout-faster-with-autofill?hl=en)
 - [Nielsen Norman Group](https://www.nngroup.com/)'s [Checklist for Designing Mobile Input Fields](https://www.nngroup.com/articles/mobile-input-checklist/)
+- [Why Don’t Screen Readers Always Read What’s on the Screen? Part 1: Punctuation and Typographic Symbols](http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/)
 
 
 ## License
