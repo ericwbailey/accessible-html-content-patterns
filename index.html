@@ -946,107 +946,126 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
         <fieldset id="subsection__states-and-validation" role="region" aria-labelledby="subtitle__states-and-validation"><!-- Start of #subsection__states-and-validation -->
             <legend id="subtitle__states-and-validation">States and Validation</legend>
+            <div id="subsection__input" role="region" aria-labelledby="subtitle__input"><!-- Start of #subsection__input -->
+                <h2 id="subtitle__input">Input</h2>
+                <label for="input__required">
+                    Required
+                    <input
+                        required
+                        id="input__required"
+                        name="required"
+                        type="text" />
+                </label>
 
-            <label for="input__required">
-                Required
-                <input
-                    required
-                    id="input__required"
-                    name="required"
-                    type="text" />
-            </label>
+                <label for="input__readonly">
+                    Readonly
+                    <input
+                        readonly
+                        value="Read Only"
+                        id="input__readonly"
+                        name="readonly"
+                        type="text" />
+                </label>
 
-            <label for="input__readonly">
-                Readonly
-                <input
-                    readonly
-                    value="Read Only"
-                    id="input__readonly"
-                    name="readonly"
-                    type="text" />
-            </label>
+                <label for="input__loading">
+                    Loading
+                    <input
+                        id="input__loading"
+                        name="loading"
+                        aria-busy="true"
+                        data-input-state="loading"
+                        type="text" />
+                </label>
 
-            <label for="input__loading">
-                Loading
-                <input
-                    id="input__loading"
-                    name="loading"
-                    data-input-state="loading"
-                    type="text" />
-            </label>
+                <label for="input__disabled">
+                    Disabled
+                    <input
+                        disabled
+                        id="input__disabled"
+                        name="disabled"
+                        type="text" />
+                </label>
 
-            <label for="input__disabled">
-                Disabled
-                <input
-                    disabled
-                    id="input__disabled"
-                    name="disabled"
-                    type="text" />
-            </label>
+                <label for="input__valid">
+                    Valid
+                    <input
+                        id="input__valid"
+                        name="valid"
+                        aria-invalid="false"
+                        type="text" />
+                </label>
 
-            <label for="input__valid">
-                Valid
-                <input
-                    id="input__valid"
-                    name="valid"
-                    data-input-state="valid"
-                    type="text" />
-            </label>
+                <label for="input__invalid">
+                    Invalid
+                    <input
+                        id="input__invalid"
+                        name="invalid"
+                        aria-invalid="true"
+                        type="text" />
+                </label>
 
-            <label for="input__invalid">
-                Invalid
-                <input
-                    id="input__invalid"
-                    name="invalid"
-                    data-input-state="invalid"
-                    type="text" />
-            </label>
+                <label for="input__warning">
+                    Warning
+                    <input
+                        id="input__warning"
+                        name="warning"
+                        data-input-state="warning"
+                        type="text" />
+                </label>
 
-            <label for="input__warning">
-                Warning
-                <input
-                    id="input__warning"
-                    name="warning"
-                    data-input-state="warning"
-                    type="text" />
-            </label>
+                <label for="input__search-with-autosave">
+                    Search with Autosave
+                    <input
+                        autosave
+                        id="input__search-with-autosave"
+                        name="search-with-autosave"
+                        type="search" />
+                </label>
 
-            <label for="input__search-with-autosave">
-                Search with Autosave
-                <input
-                    autosave
-                    id="input__search-with-autosave"
-                    name="search-with-autosave"
-                    type="search" />
-            </label>
+                <label for="input__pattern">
+                    Input with Pattern Validation
+                    <input
+                        pattern="[0-9]{13,16}"
+                        id="input__pattern"
+                        name="pattern"
+                        type="number" />
+                </label>
 
-            <label for="input__pattern">
-                Input with Pattern Validation
-                <input
-                    pattern="[0-9]{13,16}"
-                    id="input__pattern"
-                    name="pattern"
-                    type="number" />
-            </label>
+                <label for="input__minlength">
+                    Minlength
+                    <input
+                        id="input__minlength"
+                        name="minlength"
+                        minlength="5"
+                        type="number" />
+                </label>
 
-            <label for="input__minlength">
-                Minlength
-                <input
-                    id="input__minlength"
-                    name="minlength"
-                    minlength="5"
-                    type="number" />
-            </label>
+                <label for="input__maxlength">
+                    Maxlength
+                    <input
+                        id="input__maxlength"
+                        name="maxlength"
+                        maxlength="10"
+                        type="number" />
+                </label>
+            </div><!-- End of #subsection__input -->
 
-            <label for="input__maxlength">
-                Maxlength
-                <input
-                    id="input__maxlength"
-                    name="maxlength"
-                    maxlength="10"
-                    type="number" />
-            </label>
+            <div id="subsection__buttons" role="region" aria-labelledby="subtitle__buttons"><!-- Start of #subsection__buttons -->
+                <h2 id="subtitle__buttons">Buttons</h2>
+                <button
+                    disabled>
+                    Disabled
+                </button>
 
+                <button
+                    aria-busy="true">
+                    Loading
+                </button>
+
+                <p>
+                    <small>Note: Use <code>:hover</code>, <code>:focus</code>, and <code>:active</code> selectors to control the other button states. Learn more about <a rel="external" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw">Buttons in Design Systems</a>.</small>
+                </p>
+            </div><!-- End of #subsection__buttons -->
         </fieldset><!-- End of #subsection__states-and-validation -->
 
         <fieldset role="region" aria-labelledby="subtitle__autocomplete" id="subsection__autocomplete"><!-- Start of #subsection__autocomplete -->
