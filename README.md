@@ -1,4 +1,4 @@
-![Accessible HTML Content Patterns](https://raw.githubusercontent.com/ericwbailey/accessible-html-content-patterns/master/logo.png)
+# [Accessible HTML Content Patterns](http://ericwbailey.github.io/accessible-html-content-patterns/)
 
 A collection of the full [HTML5 Doctor Element Index](http://html5doctor.com/element-index/), minus the `<details>`, `<summary>`, `<command>`, and `<menu>` tags (which have [poor browser support](http://caniuse.com/#search=menu)), as well as common markup patterns for quick reference.
 
@@ -38,7 +38,6 @@ Contributions are welcome!
 
 - Submit a [Pull Request](https://github.com/ericwbailey/accessible-html-content-patterns/pulls)
 - [Raise an Issue](https://github.com/ericwbailey/accessible-html-content-patterns/issues)
-- Comment in-context on [Genuis](http://genius.com/web-annotator)
 
 
 ## Credits, Attribution, and Inspiration
