@@ -14,6 +14,10 @@ There are a few of ways to work with this repo:
 
 - Clone it in its entirety: `https://github.com/ericwbailey/accessible-html-content-patterns.git`
 - [Download a zipped copy](https://github.com/ericwbailey/accessible-html-content-patterns/archive/master.zip)
+- [Curl](http://explainshell.com/explain/1/curl) just the HTML page (great starting place for a styleguide):
+```bash
+curl -Lo accessible-html-content-patterns.html https://raw.githubusercontent.com/ericwbailey/accessible-html-content-patterns/master/docs/index.html
+```
 - Copy/paste individual elements from the [source code](https://github.com/ericwbailey/accessible-html-content-patterns/blob/master/index.html)
 
 
