@@ -43,6 +43,8 @@ Contributions are welcome!
 
 
 ## Credits, Attribution, and Inspiration
+- [WebAIM](http://webaim.org/): 
+[Three things you should know before using VoiceOver for testing](http://webaim.org/blog/three-things-voiceover/)
 - [Adam Morse](http://mrmrs.cc/)'s [mrmrs/html](https://github.com/mrmrs/html)
 - [HTML5 Doctor](http://html5doctor.com/)
 - [Alistair Duggin](http://alistairduggin.co.uk/)'s [Accessibility Fails](http://aduggin.github.io/accessibility-fails/)
@@ -54,6 +56,7 @@ Contributions are welcome!
 - [Nielsen Norman Group](https://www.nngroup.com/)'s [Checklist for Designing Mobile Input Fields](https://www.nngroup.com/articles/mobile-input-checklist/)
 - [Why Don’t Screen Readers Always Read What’s on the Screen? Part 1: Punctuation and Typographic Symbols](http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/)
 - [Nathan Curtis](https://twitter.com/nathanacurtis)' [Buttons in Design Systems](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw)
+- [Filament Group](https://www.filamentgroup.com/): [I Wanted to Type a Number](https://www.filamentgroup.com/lab/type-number.html)
 
 
 ## License
