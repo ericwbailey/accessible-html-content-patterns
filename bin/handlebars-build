@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+const Handlebars = require('handlebars');
+
+require('../docs/views');
+require('../docs/partials');
+
+process.stdout.write(Handlebars.templates.index());
