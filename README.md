@@ -56,6 +56,7 @@ Contributions are welcome!
 - [Chrome Autofill](https://developers.google.com/web/updates/2015/06/checkout-faster-with-autofill?hl=en)
 - [Nielsen Norman Group](https://www.nngroup.com/)'s [Checklist for Designing Mobile Input Fields](https://www.nngroup.com/articles/mobile-input-checklist/)
 - [Why Don’t Screen Readers Always Read What’s on the Screen? Part 1: Punctuation and Typographic Symbols](http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/)
+- [LeonieWatson](http://tink.uk/)'s [Accessible emoji](http://tink.uk/accessible-emoji/)
 - [Nathan Curtis](https://twitter.com/nathanacurtis)' [Buttons in Design Systems](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw)
 - [Filament Group](https://www.filamentgroup.com/): [I Wanted to Type a Number](https://www.filamentgroup.com/lab/type-number.html)
 
