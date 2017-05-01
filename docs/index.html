@@ -50,6 +50,7 @@
                 <li><a href="#subsection__image">Image</a></li>
                 <li><a href="#subsection__broken-image">Broken Image</a></li>
                 <li><a href="#subsection__figure-with-caption">Figure with Caption</a></li>
+                <li><a href="#subsection__inline-svg">Inline <abbr>SVG</abbr></li>
                 <li><a href="#subsection__picture">Picture</a></li>
                 <li><a href="#subsection__image-with-srcset-and-sizes">Image with Srcset and Sizes</a></li>
                 <li><a href="#subsection__iframe">Iframe</a></li>
@@ -417,6 +418,34 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             An example figure caption.
         </figcaption>
     </figure><!-- End of #subsection__figure-with-caption -->
+
+    <h2 id="subsection__inline-svg">Inline SVG</h2><!-- Start of #subsection__inline-svg -->
+    <figure>
+        <svg
+            aria-labelledby="svg__title svg__description"
+            role="img"
+            height="162"
+            width="168"
+            viewBox="0 0 28 27"
+            xmlns="http://www.w3.org/2000/svg">
+            <title id="svg__title">A crab</title>
+            <desc id="svg__description">A solid black illustration of a crab.</desc>
+            <path fill="#000000" d="M28.044,16.791 C26.087,18.748 23.728,18.633 22.257,18.285 C22.405,17.861 22.53,17.441 22.632,17.033 C22.798,17.043 22.961,17.058 23.139,17.058 C25.093,17.058 27.603,16.308 28.96,12.913 C29.075,12.626 28.935,12.3 28.647,12.186 C28.362,12.071 28.034,12.209 27.919,12.497 C26.723,15.487 24.497,16.018 22.852,15.946 C22.905,15.626 22.946,15.317 22.968,15.032 C23.967,14.782 29.374,11.151 28.999,5.999 C28.773,2.892 25.811,-0.282 22.245,0.753 C22.561,0.915 25.731,2.304 24.933,6.958 C24.933,6.958 21.65,5.677 21.27,2.999 C21.27,2.999 18.375,6.958 24.19,11.329 C24.19,11.329 22.142,13.261 19.046,11.12 C18.826,10.911 18.598,10.718 18.36,10.54 L18.36,9 L17.24,9 L17.24,9.869 C16.538,9.541 15.786,10.08 15,10.08 C14.214,10.08 13.462,9.541 12.761,9.869 L12.761,9 L11.641,9 L11.641,10.541 C11.402,10.719 11.173,10.912 10.953,11.121 C7.858,13.262 5.81,11.33 5.81,11.33 C11.624,6.959 8.729,3 8.729,3 C8.349,5.678 5.067,6.959 5.067,6.959 C4.267,2.305 7.437,0.916 7.753,0.754 C4.187,-0.281 1.226,2.893 0.999,6 C0.624,11.152 6.031,14.783 7.03,15.033 C7.053,15.318 7.094,15.627 7.146,15.947 C5.501,16.019 3.275,15.488 2.079,12.498 C1.965,12.211 1.637,12.072 1.351,12.187 C1.064,12.3 0.924,12.626 1.038,12.914 C2.395,16.309 4.906,17.059 6.859,17.059 C7.037,17.059 7.2,17.043 7.366,17.034 C7.468,17.442 7.594,17.862 7.741,18.286 C6.27,18.634 3.911,18.749 1.954,16.792 C1.735,16.573 1.381,16.573 1.162,16.792 C0.943,17.011 0.943,17.364 1.162,17.583 C2.721,19.142 4.511,19.587 6.043,19.587 C6.845,19.587 7.561,19.462 8.151,19.316 C8.233,19.5 8.317,19.681 8.409,19.861 C6.471,20.74 4.358,22.316 4.358,25.029 C4.358,25.338 4.609,25.588 4.917,25.588 C5.227,25.588 5.478,25.338 5.478,25.029 C5.478,22.9 7.272,21.609 8.938,20.863 C9.049,21.045 9.182,21.213 9.332,21.369 C9.434,21.506 9.543,21.639 9.652,21.769 C8.879,22.156 8.108,22.73 7.851,23.576 C7.572,24.502 7.958,25.502 9.001,26.545 C9.11,26.654 9.254,26.709 9.397,26.709 C9.541,26.709 9.683,26.654 9.793,26.545 C10.012,26.326 10.012,25.971 9.793,25.752 C9.064,25.023 8.772,24.4 8.923,23.902 C9.09,23.345 9.783,22.918 10.465,22.629 C11.622,23.666 13.111,24.356 14.997,24.356 C16.883,24.356 18.372,23.667 19.53,22.629 C20.212,22.918 20.904,23.346 21.071,23.902 C21.222,24.4 20.929,25.023 20.201,25.752 C19.982,25.971 19.982,26.326 20.201,26.545 C20.31,26.654 20.454,26.709 20.596,26.709 C20.74,26.709 20.883,26.654 20.992,26.545 C22.036,25.502 22.423,24.502 22.142,23.576 C21.885,22.73 21.114,22.156 20.341,21.769 C20.45,21.638 20.56,21.505 20.661,21.369 C20.81,21.213 20.944,21.045 21.055,20.863 C22.722,21.609 24.515,22.9 24.515,25.029 C24.515,25.338 24.766,25.588 25.076,25.588 C25.386,25.588 25.636,25.338 25.636,25.029 C25.636,22.316 23.523,20.74 21.585,19.861 C21.677,19.681 21.762,19.5 21.843,19.316 C22.434,19.462 23.15,19.587 23.951,19.587 C25.484,19.587 27.273,19.142 28.832,17.583 C29.051,17.364 29.051,17.011 28.832,16.792 C28.617,16.572 28.263,16.572 28.044,16.791 Z" transform="translate(-1)" opacity=".9"/>
+        </svg>
+        <figcaption>
+            <a rel="external noopener" href="https://thenounproject.com/search/?q=crab&i=583446">Crab by Hea Poh Lin</a> from the Noun Project
+        </figcaption>
+
+        <ul>
+            <li>
+                <small>Note: Be sure to provide values for the <code>height</code> and <code>width</code> attributes so <abbr>SVGs</abbr> won't expand to fill the page if styles don't load.</small>
+            </li>
+            <li>
+                <small>Note: Different implementations of <abbr>SVG</abbr> have <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/">different approaches for being made accessible</a>.</small>
+            </li>
+        </ul>
+
+    </figure><!-- End of #subsection__inline-svg -->
 
     <h2 id="subsection__picture">Picture</h2><!-- Start of #subsection__picture -->
     <picture>
@@ -916,15 +945,32 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                 &#9742;
             </button>
 
+            <button>
+                Button with <abbr>SVG</abbr> icon
+                <svg
+                    aria-hidden="true"
+                    height="16"
+                    width="16"
+                    viewBox="0 0 16 16"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#000000" fill-rule="evenodd" d="M8,16 C12.418278,16 16,12.418278 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 Z M8.28116557,3 C8.58745219,3 8.8466139,3.10719871 9.05865848,3.32159934 C9.27070306,3.53599997 9.37672376,3.79398367 9.37672376,4.09555819 C9.37672376,4.3971327 9.26952505,4.6539384 9.05512442,4.86598298 C8.84072379,5.07802756 8.58274009,5.18404826 8.28116557,5.18404826 C7.97959106,5.18404826 7.72278536,5.07802756 7.51074078,4.86598298 C7.2986962,4.6539384 7.1926755,4.3971327 7.1926755,4.09555819 C7.1926755,3.79398367 7.2986962,3.53599997 7.51074078,3.32159934 C7.72278536,3.10719871 7.97959106,3 8.28116557,3 Z M9.270702,6.20185716 L9.270702,11.4393321 C9.270702,11.9058302 9.32489036,12.2038662 9.4332687,12.333449 C9.54164704,12.4630318 9.75368844,12.5372462 10.0693993,12.5560947 L10.0693993,12.8105469 L6.5,12.8105469 L6.5,12.5560947 C6.79215031,12.5466704 7.00890374,12.4618539 7.1502668,12.3016424 C7.24450883,12.1932641 7.29162914,11.9058302 7.29162914,11.4393321 L7.29162914,7.58014004 C7.29162914,7.11364196 7.23744078,6.81560599 7.12906244,6.6860232 C7.0206841,6.5564404 6.81099872,6.48222591 6.5,6.4633775 L6.5,6.20185716 L9.270702,6.20185716 Z"/>
+                </svg>
+            </button>
+
             <span
                 role="button"
                 tabindex="0">
                 Text Button
             </span>
 
-            <p>
-                <small>Note: Use <code>tabindex="0"</code> in conjunction with <code>role="button"</code> to ensure that the text button is focusable. Use <code>cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
-            </p>
+            <ul>
+                <li>
+                    <small>Note: Add <code>pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
+                </li>
+                <li>
+                    <small>Note: Use <code>tabindex="0"</code> in conjunction with <code>role="button"</code> to ensure that the text button is focusable. Use <code>cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
+                </li>
+            </ul>
 
         </fieldset><!-- End of #subsection__buttons -->
 
