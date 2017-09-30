@@ -183,11 +183,10 @@
             <li>Blackcurrant</li>
         </ul>
 
-        <ul>
-            <li>
-                <small>Note: VoiceOver will not <a rel="external noopener" href="https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/">announce unordered lists properly when either the list-style-type is set to none or display is set to inline</a>.</small>
-            </li>
-        </ul>
+        <h4>Notes:</h4>
+        <p>
+            <small>VoiceOver will not <a rel="external noopener" href="https://unfetteredthoughts.net/2017/09/26/voiceover-and-list-style-type-none/">announce unordered lists properly when either the list-style-type is set to none or display is set to inline</a>.</small>
+        </p>
 
         <h3>Ordered List</h3>
         <ol>
@@ -284,9 +283,12 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             <li><span role="definition" aria-label="Approximately equals">≈</span></li>
             <li><span role="definition" aria-label="Not equals">≠</span></li>
         </ul>
+
+        <h4>Notes:</h4>
         <p>
-            <small>Note: Certain screen readers will not <a rel="external noopener" href="http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">read certain symbols out loud</a>. Use <code>role="definition"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
+            <small>Certain screen readers will not <a rel="external noopener" href="http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">read certain symbols out loud</a>. Use <code>role="definition"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
         </p>
+
     </div><!-- End of #subsection__symbols -->
     <div id="subsection__emoji" aria-labelledby="subtitle__emoji"><!-- Start of #subsection__emoji -->
         <h3 id="subtitle__emoji">Emoji</h3>
@@ -297,8 +299,10 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             <li><span role="img" aria-label="Snowman emoji">⛄️</span></li>
             <li><span role="img" aria-label="Beer emoji">🍺</span></li>
         </ul>
+
+        <h4>Notes:</h4>
         <p>
-            <small>Note: Certain screen readers will not <a rel="external noopener" href="http://tink.uk/accessible-emoji/">expose emoji as images in the accessibility treee</a>. Use <code>role="img"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
+            <small>Certain screen readers will not <a rel="external noopener" href="http://tink.uk/accessible-emoji/">expose emoji as images in the accessibility treee</a>. Use <code>role="img"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
         </p>
     </div><!-- End of #subsection__emoji -->
 </section><!-- End of #section__text-level -->
@@ -395,8 +399,9 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         </tfoot>
     </table>
 
+    <h3>Notes:</h3>
     <p>
-        <small>Note: Use <code>id</code> and <code>header</code> attributes for tables with complicated markup (colspans, row headers, etc.).</small>
+        <small>Use <code>id</code> and <code>header</code> attributes for tables with complicated markup (colspans, row headers, etc.).</small>
     </p>
 
 </section><!-- End of #section__tables -->
@@ -444,15 +449,16 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         </figcaption>
     </figure><!-- End of #subsection__inline-svg -->
 
+    <h3>Notes:</h3>
     <ul>
         <li>
-            <small>Note: Be sure to provide values for the <code>height</code> and <code>width</code> attributes so <abbr>SVGs</abbr> won't expand to fill the page if styles don't load.</small>
+            <small>Be sure to provide values for the <code>height</code> and <code>width</code> attributes so <abbr>SVGs</abbr> won't expand to fill the page if styles don't load.</small>
         </li>
         <li>
-            <small>Note: Different implementations of <abbr>SVG</abbr> have <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/">different approaches for being made accessible</a>.</small>
+            <small>Different implementations of <abbr>SVG</abbr> have <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/">different approaches for being made accessible</a>.</small>
         </li>
         <li>
-            <small>Note: Apply <code>focusable=”false”</code> to any <abbr>SVG</abbr> placed inside of <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">a focusable element such as a link or button</a>.</small>
+            <small>Apply <code>focusable=”false”</code> to any <abbr>SVG</abbr> placed inside of <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">a focusable element such as a link or button</a>.</small>
         </li>
     </ul>
 
@@ -528,8 +534,9 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a> or <a download href="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">download a file</a> for offline viewing.
     </video><!-- End of #subsection__video -->
 
+    <h3>Notes:</h3>
     <p>
-        <small>Note: Accessibility errors concerning the video's missing audio description should go away once the <code>&lt;track&gt;</code>'s source is linked to a valid caption file.</small>
+        <small>Accessibility errors concerning the video's missing audio description should go away once the <code>&lt;track&gt;</code>'s source is linked to a valid caption file.</small>
     </p>
 
     <h2 id="subsection__object">Object</h2><!-- Start of #subsection__object -->
@@ -977,12 +984,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                 Text Button
             </span>
 
+            <h4>Notes:</h4>
             <ul>
                 <li>
-                    <small>Note: Add <code>pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
+                    <small>Add <code>pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
                 </li>
                 <li>
-                    <small>Note: Use <code>tabindex="0"</code> in conjunction with <code>role="button"</code> to ensure that the text button is focusable. Use <code>cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
+                    <small>Use <code>tabindex="0"</code> in conjunction with <code>role="button"</code> to ensure that the text button is focusable. Use <code>cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
                 </li>
             </ul>
 
@@ -1152,8 +1160,9 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                     Loading
                 </button>
 
+                <h5>Notes:</h5>
                 <p>
-                    <small>Note: Use <code>:hover</code>, <code>:focus</code>, and <code>:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw">Buttons in Design Systems</a>.</small>
+                    <small>Use <code>:hover</code>, <code>:focus</code>, and <code>:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw">Buttons in Design Systems</a>.</small>
                 </p>
             </div><!-- End of #subsection__buttons -->
         </fieldset><!-- End of #subsection__states-and-validation -->
@@ -1569,8 +1578,9 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                     type="file" />
             </label>
 
+            <h4>Notes:</h4>
             <p>
-                <small>Note: Be sure to reference the <a rel="external noopener" href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers Believe</cite></a> collection for creating bulletproof inputs.</small>
+                <small>Be sure to reference the <a rel="external noopener" href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers Believe</cite></a> collection for creating bulletproof inputs.</small>
             </p>
 
         </fieldset><!-- End of #subsection__autocomplete -->
