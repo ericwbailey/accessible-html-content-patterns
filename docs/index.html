@@ -118,6 +118,11 @@
     <p>
         If I didn't have my parents to think about I'd have given in my notice a long time ago, I'd have gone up to the boss and told him just what I think, tell him everything I would, let him know just what I feel. He'd fall right off his desk! And it's a funny sort of business to be sitting up there at your desk, talking down at your subordinates from up there, especially when you have to go right up close because the boss is hard of hearing. Well, there's still some hope; once I've got the money together to pay off my parents' debt to him - another five or six years I suppose - that's definitely what I'll do. That's when I'll make the big change. First of all though, I've got to get up, my train leaves at five."
     </p>
+
+    <h2>Notes:</h2>
+    <p>
+        <small>Ensure that headings create a logical order. Apply <abbr="Cascading Style Sheets">CSS</abbr> classes to control visual presentation (e.g. <code>&lt;h2 class=&quot;type-size-medium color-blue-dark&quot;&gt;Our services&lt;/h2&gt;</code> ).</small>
+    </p>
 </section><!-- End of #section__headings -->
 
 <hr />
@@ -470,7 +475,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             <small>Different implementations of <abbr>SVG</abbr> have <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/">different approaches for being made accessible</a>.</small>
         </li>
         <li>
-            <small>Apply <code>focusable=”false”</code> to any <abbr>SVG</abbr> placed inside of <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">a focusable element such as a link or button</a>.</small>
+            <small>Add whitespace around the <code>use</code> element in a <abbr>SVG</abbr> icon system to <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">prevent a focus bug with Safari 10</a>.</small>
         </li>
     </ul>
 
@@ -781,6 +786,11 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                     type="range" />
             </label>
 
+            <h4>Notes:</h4>
+            <p>
+                <small>Some pointers on <a rel="external noopener" href="https://css-tricks.com/sliding-nightmare-understanding-range-input/">styling the range input</a>.</small>
+            </p>
+
         </fieldset><!-- End of #subsection__non-text-input -->
 
         <fieldset id="subsection__select" role="region" aria-labelledby="subtitle__select"><!-- Start of #subsection__select -->
@@ -954,7 +964,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                         id="x-large"
                         name="beverage"
                         type="radio" />
-                    Large
+                    Extra Large
                 </label>
 
             </fieldset>
@@ -966,39 +976,42 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                 <h3 id="subtitle__button-states">Buttons</h3>
             </legend>
 
-            <button>
+            <button type="button">
                 Button
             </button>
 
             <button
-                data-button-priority="primary">
+                data-button-priority="primary"
+                type="button">
                 Primary Button
             </button>
 
             <button
-                data-button-priority="secondary">
+                data-button-priority="secondary"
+                 type="button">
                 Secondary Button
             </button>
 
             <input
-                name=button""
+                name="button"
                 value="Input Button"
                 type="button" />
 
-            <button aria-label="Icon Button">
+            <button type="button" aria-label="Icon Button">
                 &#9742;
             </button>
 
-            <button>
-                Button with <abbr>SVG</abbr> icon
+            <button type="button">
                 <svg
                     aria-hidden="true"
                     height="16"
                     width="16"
+                    focusable="false"
                     viewBox="0 0 16 16"
                     xmlns="http://www.w3.org/2000/svg">
                     <path fill="#000000" fill-rule="evenodd" d="M8,16 C12.418278,16 16,12.418278 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 Z M8.28116557,3 C8.58745219,3 8.8466139,3.10719871 9.05865848,3.32159934 C9.27070306,3.53599997 9.37672376,3.79398367 9.37672376,4.09555819 C9.37672376,4.3971327 9.26952505,4.6539384 9.05512442,4.86598298 C8.84072379,5.07802756 8.58274009,5.18404826 8.28116557,5.18404826 C7.97959106,5.18404826 7.72278536,5.07802756 7.51074078,4.86598298 C7.2986962,4.6539384 7.1926755,4.3971327 7.1926755,4.09555819 C7.1926755,3.79398367 7.2986962,3.53599997 7.51074078,3.32159934 C7.72278536,3.10719871 7.97959106,3 8.28116557,3 Z M9.270702,6.20185716 L9.270702,11.4393321 C9.270702,11.9058302 9.32489036,12.2038662 9.4332687,12.333449 C9.54164704,12.4630318 9.75368844,12.5372462 10.0693993,12.5560947 L10.0693993,12.8105469 L6.5,12.8105469 L6.5,12.5560947 C6.79215031,12.5466704 7.00890374,12.4618539 7.1502668,12.3016424 C7.24450883,12.1932641 7.29162914,11.9058302 7.29162914,11.4393321 L7.29162914,7.58014004 C7.29162914,7.11364196 7.23744078,6.81560599 7.12906244,6.6860232 C7.0206841,6.5564404 6.81099872,6.48222591 6.5,6.4633775 L6.5,6.20185716 L9.270702,6.20185716 Z"/>
                 </svg>
+                Button with <abbr>SVG</abbr> icon
             </button>
 
             <span
@@ -1010,7 +1023,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             <h4>Notes:</h4>
             <ul>
                 <li>
+                    <small>Add <code>type="button"</code> to <code>&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
+                </li>
+                <li>
                     <small>Add <code>pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
+                </li>
+                <li>
+                    <small>Add <code>focusable="false"</code> to SVG inside of a focusable element (links, buttons, etc.) to prevent <a rel="external noopener" href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet Explorer</a>.</small>
                 </li>
                 <li>
                     <small>Use <code>tabindex="0"</code> in conjunction with <code>role="button"</code> to ensure that the text button is focusable. Use <code>cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
@@ -1066,6 +1085,11 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
                     type="checkbox" />
                 I agree
             </label>
+
+            <h4>Notes:</h4>
+            <p>
+                <small>Place messaging above the input field so as to not be lost when magnification or focus on mobile occurs.</small>
+            </p>
 
         </fieldset><!-- End of #subsection__lockup -->
 
@@ -1180,18 +1204,20 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             <div id="subsection__buttons" role="region" aria-labelledby="subtitle__buttons"><!-- Start of #subsection__buttons -->
                 <h4 id="subtitle__buttons">Buttons</h4>
                 <button
-                    disabled>
+                    disabled
+                    type="button">
                     Disabled
                 </button>
 
                 <button
-                    aria-busy="true">
+                    aria-busy="true"
+                    type="button">
                     Loading
                 </button>
 
                 <h5>Notes:</h5>
                 <p>
-                    <small>Use <code>:hover</code>, <code>:focus</code>, and <code>:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw">Buttons in Design Systems</a>.</small>
+                    <small>Use <code>:hover</code>, <code>:focus</code>, and <code>:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
                 </p>
             </div><!-- End of #subsection__buttons -->
         </fieldset><!-- End of #subsection__states-and-validation -->
