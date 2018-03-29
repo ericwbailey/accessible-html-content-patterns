@@ -17,9 +17,9 @@
 
 <aside id="section__project-link" aria-labelledby="title__project"><!-- Start of #section__project-link -->
     <a href="https://github.com/ericwbailey/accessible-html-content-patterns">
-        <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 250 250" fill="#ffffff" style="position: absolute; top: 0; right: 0">
-            <title id="title__project" style="border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;">View project repository on GitHub</title>
-            <desc style="border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;">A ribbon banner featuring a silhouette of GitHub's logo, the Octocat.</desc>
+        <svg aria-labelledby="project__title project__description" xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 250 250" fill="#ffffff" role="img" style="position: absolute; top: 0; right: 0">
+            <title id="project__title" style="border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;">View project repository on GitHub</title>
+            <!--[if !IE]> --><desc id="project__description" style="border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;">A ribbon banner featuring a silhouette of GitHub's logo, the Octocat.</desc><!-- <![endif]-->
             <path d="M0 0l115 115h15l12 27 108 108V0z" fill="#000000"/>
             <path class="octo-arm" d="M128 109c-15-9-9-19-9-19 3-7 2-11 2-11-1-7 3-2 3-2 4 5 2 11 2 11-3 10 5 15 9 16" style="-webkit-transform-origin: 130px 106px; transform-origin: 130px 106px"/>
             <path class="octo-body" d="M115 115s4 2 5 0l14-14c3-2 6-3 8-3-8-11-15-24 2-41 5-5 10-7 16-7 1-2 3-7 12-11 0 0 5 3 7 16 4 2 8 5 12 9s7 8 9 12c14 3 17 7 17 7-4 8-9 11-11 11 0 6-2 11-7 16-16 16-30 10-41 2 0 3-1 7-5 11l-12 11c-1 1 1 5 1 5z"/>
@@ -31,22 +31,28 @@
 
 <nav id="section__table-of-contents" aria-labelledby="title__table-of-contents"><!-- Start of #section__table-of-contents -->
     <h2 id="title__table-of-contents">Table of Contents</h2>
-    <ul>
+
+    <ol>
         <li><a href="#section__about">About</a></li>
         <li><a href="#section__headings">Headings</a></li>
         <li><a href="#section__text-level">Text-level</a>
-            <ul>
+            <ol>
                 <li><a href="#subsection__content">Content</a></li>
                 <li><a href="#subsection__lists">Lists</a></li>
                 <li><a href="#subsection__links">Links</a></li>
                 <li><a href="#subsection__code">Code</a></li>
                 <li><a href="#subsection__symbols">Symbols</a></li>
                 <li><a href="#subsection__emoji">Emoji</a></li>
-            </ul>
+            </ol>
         </li>
         <li><a href="#section__tables">Tables</a></li>
+        <li><a href="#section__interactive">Interactive</a></li>
+            <ol>
+                <li><a href="#subsection__details">Details</a></li>
+                <li><a href="#subsection__dialog">Dialog</a></li>
+            </ol>
         <li><a href="#section__embedded">Embedded</a></li>
-            <ul>
+            <ol>
                 <li><a href="#subsection__image">Image</a></li>
                 <li><a href="#subsection__broken-image">Broken Image</a></li>
                 <li><a href="#subsection__figure-with-caption">Figure with Caption</a></li>
@@ -58,9 +64,9 @@
                 <li><a href="#subsection__video">Video</a></li>
                 <li><a href="#subsection__object">Object</a></li>
                 <li><a href="#subsection__canvas">Canvas</a></li>
-            </ul>
+            </ol>
         <li><a href="#section__forms">Forms</a>
-            <ul>
+            <ol>
                 <li><a href="#subsection__text-input">Text Input</a></li>
                 <li><a href="#subsection__non-text-input">Non-text Input</a></li>
                 <li><a href="#subsection__select">Select</a></li>
@@ -70,10 +76,10 @@
                 <li><a href="#subsection__lockup">Lockup</a></li>
                 <li><a href="#subsection__states-and-validation">States and Validation</a></li>
                 <li><a href="#subsection__autocomplete">Autocomplete</a></li>
-            </ul>
+            </ol>
         </li>
         <li><a href="#section__credit">Credit</a></li>
-    </ul>
+    </ol>
 </nav><!-- End of #section__table-of-contents -->
 
 <hr />
@@ -82,7 +88,7 @@
     <h2 id="title__about">About</h2>
 
     <p>
-        Accessible, semantic markup patterns for HTML content. Uses the full <a rel="external noopener" href="http://html5doctor.com/element-index/"><cite>HTML5 Doctor Element Index</cite></a>, minus the <code>&lt;details&gt;</code>, <code>&lt;summary&gt;</code>, <code>&lt;command&gt;</code>, and <code>&lt;menu&gt;</code> tags.
+        Accessible, semantic markup patterns for HTML content. Uses the full <a rel="external noopener" href="http://html5doctor.com/element-index/"><cite>HTML5 Doctor Element Index</cite></a>, minus the <code>&lt;command&gt;</code> and <code>&lt;menu&gt;</code> tags.
     </p>
     <p>
         Reference <a rel="external noopener" href="http://alistairduggin.co.uk/">Alistair Duggin</a>'s <a rel="external noopener" href="http://aduggin.github.io/accessibility-fails/"><cite>Accessibility Fails</cite></a> for common markup pattern accessibility mistakes, and <a rel="external noopener" href="http://pauljadam.com/">Paul J. Adam</a>'s <a rel="external noopener" href="http://pauljadam.com/demos/landmarks.html"><cite>WAI-ARIA Landmarks Site Navigation Structure Demo</cite></a> for semantic, accessible page landmarks.
@@ -425,20 +431,50 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
 <hr />
 
+<section id="section__interactive" aria-labelledby="title__interactive"><!-- Start of #section__interactive -->
+    <h2 id="title__interactive">Interactive</h2>
+
+    <h3 id="subsection__details">Details</h3><!-- Start of #subsection__details -->
+    <details>
+        <summary>What payment options do you accept?</summary>
+        <p>We accept cash, Visa, American Express, money orders, and personal checks.</p>
+    </details>
+
+    <h4>Notes:</h4>
+    <p>
+        <small>The <code>details</code> element is currently not supported by Microsoft Edge or Internet Explorer. These browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code>open</code> attribute was applied.</small>
+    </p><!-- End of #subsection__details -->
+
+    <h3 id="subsection__details">Dialog</h3><!-- Start of #subsection__details -->
+    <dialog id="dialog">
+        <p>This is dialog content.</p>
+        <button type="button">
+            Close
+        </button>
+    </dialog>
+
+    <h4>Notes:</h4>
+    <p>
+        <small>The <code>dialog</code>'s interactivity needs to be controlled with JavaScript.</small>
+    </p><!-- End of #subsection__details -->
+</section><!-- End of #section__interactive -->
+
+<hr />
+
 <section id="section__embedded" aria-labelledby="title__embedded"><!-- Start of #section__embedded -->
     <h2 id="title__embedded">Embedded</h2>
 
-    <h2 id="subsection__image">Image</h2><!-- Start of #subsection__image -->
+    <h3 id="subsection__image">Image</h3><!-- Start of #subsection__image -->
     <img
         src="http://placehold.it/600x400?text=Image+Example"
         alt="Image Exmaple" /><!-- End of #subsection__image -->
 
-    <h2 id="subsection__broken-image">Broken Image</h2><!-- Start of #subsection__broken-image -->
+    <h3 id="subsection__broken-image">Broken Image</h3><!-- Start of #subsection__broken-image -->
     <img
         src="nope"
         alt="Broken Image" /><!-- End of #subsection__broken-image -->
 
-    <h2 id="subsection__figure-with-caption">Figure with Caption</h2><!-- Start of #subsection__figure-with-caption -->
+    <h3 id="subsection__figure-with-caption">Figure with Caption</h3><!-- Start of #subsection__figure-with-caption -->
     <figure>
         <img
             src="http://placehold.it/400x250?text=Figure+Example"
@@ -448,7 +484,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         </figcaption>
     </figure><!-- End of #subsection__figure-with-caption -->
 
-    <h2 id="subsection__inline-svg">Inline SVG</h2><!-- Start of #subsection__inline-svg -->
+    <h3 id="subsection__inline-svg">Inline SVG</h3><!-- Start of #subsection__inline-svg -->
     <figure>
         <svg
             aria-labelledby="svg__title svg__description"
@@ -479,7 +515,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         </li>
     </ul>
 
-    <h2 id="subsection__picture">Picture</h2><!-- Start of #subsection__picture -->
+    <h3 id="subsection__picture">Picture</h3><!-- Start of #subsection__picture -->
     <picture>
         <source
             media="(min-width: 40em)"
@@ -493,7 +529,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             alt="Picture Element" />
     </picture><!-- End of #subsection__picture -->
 
-    <h2 id="subsection__image-with-srcset-and-sizes">Image with Srcset and Sizes</h2><!-- Start of #subsection__image-with-srcset-and-sizes -->
+    <h3 id="subsection__image-with-srcset-and-sizes">Image with Srcset and Sizes</h3><!-- Start of #subsection__image-with-srcset-and-sizes -->
     <img
         srcset="http://placehold.it/1024x768/7ED321/ffffff/?text=Large 1024w,
                 http://placehold.it/1024x768/F5A623/ffffff/?text=Medium 640w,
@@ -502,14 +538,14 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         src="http://placehold.it/600x400?text=Img+Fallback"
         alt="Image with Srcset and Sizes Example" /><!-- End of #subsection__image-with-srcset-and-sizes -->
 
-    <h2 id="subsection__iframe">Iframe</h2><!-- Start of #subsection__iframe -->
+    <h3 id="subsection__iframe">Iframe</h3><!-- Start of #subsection__iframe -->
     <iframe
         src="about:blank"
         title="about:blank"
         name="iframe"><!-- End of #subsection__iframe -->
     </iframe>
 
-    <h2 id="subsection__audio">Audio</h2><!-- Start of #subsection__audio -->
+    <h3 id="subsection__audio">Audio</h3><!-- Start of #subsection__audio -->
     <audio controls>
         <source
             src="http://www.noiseaddicts.com/samples_1w72b820/4353.mp3"
@@ -529,7 +565,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a> or <a download href="http://www.noiseaddicts.com/samples_1w72b820/4353.mp3">download a file</a> for offline listening.
     </audio><!-- End of #subsection__audio -->
 
-    <h2 id="subsection__video">Video</h2><!-- Start of #subsection__video -->
+    <h3 id="subsection__video">Video</h3><!-- Start of #subsection__video -->
     <video
         controls
         poster="http://placehold.it/854x480?text=Video+Poster">
@@ -556,7 +592,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         <small>Accessibility errors concerning the video's missing audio description should go away once the <code>&lt;track&gt;</code>'s source is linked to a valid caption file.</small>
     </p>
 
-    <h2 id="subsection__object">Object</h2><!-- Start of #subsection__object -->
+    <h3 id="subsection__object">Object</h3><!-- Start of #subsection__object -->
     <object>
         <param
             name="movie"
@@ -582,7 +618,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a> or <a rel="external noopener" href="https://www.youtube.com/watch?v=pDHzK3Xe7Yw">view the video on YouTube</a>.
     </object><!-- End of #subsection__object -->
 
-    <h2 id="subsection__canvas">Canvas</h2><!-- Start of #subsection__canvas -->
+    <h3 id="subsection__canvas">Canvas</h3><!-- Start of #subsection__canvas -->
     <canvas
         id="myCanvas"
         width="400"
@@ -1647,7 +1683,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
 <hr />
 
-<footer id="section__credit" aria-labelledby="title__credit"><!-- Start of #section__credit -->
+<footer id="section__credit" aria-labelledby="title__credit" role="contentinfo"><!-- Start of #section__credit -->
     <h2 id="title__credit">Credit</h2>
 
     <p>
