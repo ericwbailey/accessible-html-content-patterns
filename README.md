@@ -1,6 +1,6 @@
 # [Accessible HTML Content Patterns](http://ericwbailey.github.io/accessible-html-content-patterns/)
 
-A collection of the full [HTML5 Doctor Element Index](http://html5doctor.com/element-index/), minus the `<details>`, `<summary>`, `<command>`, and `<menu>` tags (which have [poor browser support](http://caniuse.com/#search=menu)), as well as common markup patterns for quick reference.
+A collection of the full [HTML5 Doctor Element Index](http://html5doctor.com/element-index/), minus the `<command>` and `<menu>` tags (which have [poor browser support](http://caniuse.com/#search=menu)), as well as common markup patterns for quick reference.
 
 
 ## Motivation
@@ -22,7 +22,7 @@ There are a few of ways to work with this repo:
 
 ## Code Concerns
 
-### Classes, IDs, and Attributes
+### Classes and IDs
 Are suggestions only, or used for internal navigation/reference. Don't feel you need to include them if they're not relevant to your component's needs.
 
 ### Code Style
@@ -33,7 +33,7 @@ This page has been tested via the Chrome DevTools [Accessibility Audit](https://
 
 Answers to specific warnings issues are available on the [repo's Wiki](https://github.com/ericwbailey/accessible-html-content-patterns/wiki).
 
-**A note about [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA):** ARIA is a band-aid and not a cure-all. Use semantic markup whenever possible.
+**A note about [ARIA](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA):** ARIA is a band-aid and [not a cure-all](https://www.w3.org/TR/using-aria/#notes2). Use semantic markup whenever possible.
 
 
 ## Contributing
@@ -59,6 +59,7 @@ Contributions are welcome!
 - [LeonieWatson](http://tink.uk/)'s [Accessible emoji](http://tink.uk/accessible-emoji/)
 - [Nathan Curtis](https://twitter.com/nathanacurtis)' [Buttons in Design Systems](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw)
 - [Filament Group](https://www.filamentgroup.com/): [I Wanted to Type a Number](https://www.filamentgroup.com/lab/type-number.html)
+- [CSS-Tricks](https://css-tricks.com/)' [Finger-friendly numerical inputs with inputmode](https://css-tricks.com/finger-friendly-numerical-inputs-with-inputmode/)
 
 
 ## License
