@@ -88,7 +88,7 @@
     <h2 id="title__about">About</h2>
 
     <p>
-        Accessible, semantic markup patterns for HTML content. Uses the full <a rel="external noopener" href="http://html5doctor.com/element-index/"><cite>HTML5 Doctor Element Index</cite></a>, minus the <code>&lt;command&gt;</code> and <code>&lt;menu&gt;</code> tags.
+        Accessible, semantic markup patterns for HTML content. Uses the full <a rel="external noopener" href="http://html5doctor.com/element-index/"><cite>HTML5 Doctor Element Index</cite></a>, minus the <code translate="no">&lt;command&gt;</code> and <code translate="no">&lt;menu&gt;</code> tags.
     </p>
     <p>
         Reference <a rel="external noopener" href="http://alistairduggin.co.uk/">Alistair Duggin</a>'s <a rel="external noopener" href="http://aduggin.github.io/accessibility-fails/"><cite>Accessibility Fails</cite></a> for common markup pattern accessibility mistakes, and <a rel="external noopener" href="http://pauljadam.com/">Paul J. Adam</a>'s <a rel="external noopener" href="http://pauljadam.com/demos/landmarks.html"><cite>WAI-ARIA Landmarks Site Navigation Structure Demo</cite></a> for semantic, accessible page landmarks.
@@ -137,7 +137,7 @@
 
     <h2>Notes:</h2>
     <p>
-        <small>Ensure that headings create a logical order. Apply <abbr="Cascading Style Sheets">CSS</abbr> classes to control visual presentation (e.g. <code>&lt;h2 class=&quot;type-size-medium color-blue-dark&quot;&gt;Our services&lt;/h2&gt;</code> ).</small>
+        <small>Ensure that headings create a logical order. Apply <abbr="Cascading Style Sheets">CSS</abbr> classes to control visual presentation (e.g. <code translate="no">&lt;h2 class=&quot;type-size-medium color-blue-dark&quot;&gt;Our services&lt;/h2&gt;</code> ).</small>
     </p>
 </section><!-- End of #section__headings -->
 
@@ -168,10 +168,10 @@
         <h4>Notes:</h4>
         <ul>
             <li>
-                <small><code>&lt;mark&gt;</code>, <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code>, and <code>&lt;s&gt;</code> elements are not announced by screen readers. Consider <a rel="external noopener" href="https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/">using CSS to indicate their presence</a>.</small>
+                <small><code translate="no">&lt;mark&gt;</code>, <code translate="no">&lt;ins&gt;</code>, <code translate="no">&lt;del&gt;</code>, and <code translate="no">&lt;s&gt;</code> elements are not announced by screen readers. Consider <a rel="external noopener" href="https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/">using CSS to indicate their presence</a>.</small>
             </li>
             <li>
-                <small>Use the <code>translate</code> attribute to control <a rel="external noopener" href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">automatic translation by the browser</a>.</small>
+                <small>Use the <code translate="no">translate</code> attribute to control <a rel="external noopener" href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">automatic translation by the browser</a>.</small>
             </li>
         </ul>
     </div><!-- End of #subsection__content -->
@@ -276,13 +276,13 @@
     </div><!-- End of #subsection__lists -->
     <div id="subsection__code" aria-labelledby="subtitle__code"><!-- Start of #subsection__code -->
         <h3 id="subtitle__code">Code</h3>
-        <code>
+        <code translate="no">
             <pre>
 sudo ipfw pipe 1 config bw 256KByte/s
 sudo ipfw add 1 pipe 1 src-port 3000
             </pre>
         </code>
-        <samp>
+        <samp translate="no">
             <pre>
 ~/Sites/boilerplate
 ❦ ☢ ☭ ☂ ♞
@@ -299,6 +299,12 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 -rw-r--r-- 1 eric staff 58601 Mar 24 11:50 index.html
             </pre>
         </samp>
+
+        <h4>Notes:</h4>
+        <p>
+            <small>Apply <code translate="no">translate="no"</code> to markup that contains code examples to prevent keywords from being automatically translated.</small>
+        </p>
+
     </div><!-- End of #subsection__code -->
     <div id="subsection__symbols" aria-labelledby="subtitle__symbols"><!-- Start of #subsection__symbols -->
         <h3 id="subtitle__symbols">Symbols</h3>
@@ -319,7 +325,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
         <h4>Notes:</h4>
         <p>
-            <small>Certain screen readers will not <a rel="external noopener" href="http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">read certain symbols out loud</a>. Use <code>role="definition"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
+            <small>Certain screen readers will not <a rel="external noopener" href="http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">read certain symbols out loud</a>. Use <code translate="no">role="definition"</code> in conjunction with <code translate="no">aria-label</code> to ensure the symbol is read.</small>
         </p>
 
     </div><!-- End of #subsection__symbols -->
@@ -335,7 +341,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
         <h4>Notes:</h4>
         <p>
-            <small>Certain screen readers will not <a rel="external noopener" href="http://tink.uk/accessible-emoji/">expose emoji as images in the accessibility treee</a>. Use <code>role="img"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
+            <small>Certain screen readers will not <a rel="external noopener" href="http://tink.uk/accessible-emoji/">expose emoji as images in the accessibility treee</a>. Use <code translate="no">role="img"</code> in conjunction with <code translate="no">aria-label</code> to ensure the symbol is read.</small>
         </p>
     </div><!-- End of #subsection__emoji -->
 </section><!-- End of #section__text-level -->
@@ -434,7 +440,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
     <h3>Notes:</h3>
     <p>
-        <small>Use <code>id</code> and <code>header</code> attributes for tables with complicated markup (colspans, row headers, etc.).</small>
+        <small>Use <code translate="no">id</code> and <code translate="no">header</code> attributes for tables with complicated markup (colspans, row headers, etc.).</small>
     </p>
 
 </section><!-- End of #section__tables -->
@@ -452,7 +458,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
     <h4>Notes:</h4>
     <p>
-        <small>The <code>details</code> element is currently not supported by Microsoft Edge or Internet Explorer. These browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code>open</code> attribute was applied.</small>
+        <small>The <code translate="no">details</code> element is currently not supported by Microsoft Edge or Internet Explorer. These browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code translate="no">open</code> attribute was applied.</small>
     </p><!-- End of #subsection__details -->
 
     <h3 id="subsection__details">Dialog</h3><!-- Start of #subsection__details -->
@@ -465,7 +471,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
     <h4>Notes:</h4>
     <p>
-        <small>The <code>dialog</code>'s interactivity needs to be controlled with JavaScript.</small>
+        <small>The <code translate="no">dialog</code>'s interactivity needs to be controlled with JavaScript.</small>
     </p><!-- End of #subsection__details -->
 </section><!-- End of #section__interactive -->
 
@@ -515,13 +521,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
     <h3>Notes:</h3>
     <ul>
         <li>
-            <small>Be sure to provide values for the <code>height</code> and <code>width</code> attributes so <abbr>SVGs</abbr> won't expand to fill the page if styles don't load.</small>
+            <small>Be sure to provide values for the <code translate="no">height</code> and <code translate="no">width</code> attributes so <abbr>SVGs</abbr> won't expand to fill the page if styles don't load.</small>
         </li>
         <li>
             <small>Different implementations of <abbr>SVG</abbr> have <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/">different approaches for being made accessible</a>.</small>
         </li>
         <li>
-            <small>Add whitespace around the <code>use</code> element in a <abbr>SVG</abbr> icon system to <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">prevent a focus bug with Safari 10</a>.</small>
+            <small>Add whitespace around the <code translate="no">use</code> element in a <abbr>SVG</abbr> icon system to <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">prevent a focus bug with Safari 10</a>.</small>
         </li>
     </ul>
 
@@ -571,7 +577,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             label="English"
             srclang="en"
             kind="captions" />
-        Your browser does not support the <code>&lt;audio&gt;</code> element.
+        Your browser does not support the <code translate="no">&lt;audio&gt;</code> element.
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a> or <a download href="http://www.noiseaddicts.com/samples_1w72b820/4353.mp3">download a file</a> for offline listening.
     </audio><!-- End of #subsection__audio -->
 
@@ -593,13 +599,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             label="English"
             srclang="en"
             kind="captions" />
-        Your browser does not support the <code>&lt;video&gt;</code> element.
+        Your browser does not support the <code translate="no">&lt;video&gt;</code> element.
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a> or <a download href="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4">download a file</a> for offline viewing.
     </video><!-- End of #subsection__video -->
 
     <h3>Notes:</h3>
     <p>
-        <small>Accessibility errors concerning the video's missing audio description should go away once the <code>&lt;track&gt;</code>'s source is linked to a valid caption file.</small>
+        <small>Accessibility errors concerning the video's missing audio description should go away once the <code translate="no">&lt;track&gt;</code>'s source is linked to a valid caption file.</small>
     </p>
 
     <h3 id="subsection__object">Object</h3><!-- Start of #subsection__object -->
@@ -624,7 +630,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             width="640"
             height="390">
         </embed>
-        Your browser does not support the <code>&lt;object&gt;</code> element.
+        Your browser does not support the <code translate="no">&lt;object&gt;</code> element.
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a> or <a rel="external noopener" href="https://www.youtube.com/watch?v=pDHzK3Xe7Yw">view the video on YouTube</a>.
     </object><!-- End of #subsection__object -->
 
@@ -633,13 +639,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         id="myCanvas"
         width="400"
         height="400">
-        Your browser does not support the <code>&lt;canvas&gt;</code> element.
+        Your browser does not support the <code translate="no">&lt;canvas&gt;</code> element.
         Please <a rel="external noopener" href="http://browsehappy.com/">consider upgrading your browser</a>.
     </canvas
 
     <h3>Notes:</h3>
     <p>
-        <small>Add <code>role="presentation"</code> to <code>&lt;track&gt;</code> to <a rel="external noopener" href="https://twitter.com/stevefaulkner/status/1039470607719694336">mute epeated announcement of graphic role by some screen readers</a>.
+        <small>Add <code translate="no">role="presentation"</code> to <code translate="no">&lt;track&gt;</code> to <a rel="external noopener" href="https://twitter.com/stevefaulkner/status/1039470607719694336">mute epeated announcement of graphic role by some screen readers</a>.
     </p>><!-- End of #subsection__canvas -->
 </section><!-- End of #section__embedded -->
 
@@ -1074,16 +1080,16 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
             <h4>Notes:</h4>
             <ul>
                 <li>
-                    <small>Add <code>type="button"</code> to <code>&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
+                    <small>Add <code translate="no">type="button"</code> to <code translate="no">&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
                 </li>
                 <li>
-                    <small>Add <code>pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
+                    <small>Add <code translate="no">pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
                 </li>
                 <li>
-                    <small>Add <code>focusable="false"</code> to SVG inside of a focusable element (links, buttons, etc.) to prevent <a rel="external noopener" href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet Explorer</a>.</small>
+                    <small>Add <code translate="no">focusable="false"</code> to SVG inside of a focusable element (links, buttons, etc.) to prevent <a rel="external noopener" href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet Explorer</a>.</small>
                 </li>
                 <li>
-                    <small>Use <code>tabindex="0"</code> in conjunction with <code>role="button"</code> to ensure that the text button is focusable. Use <code>cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
+                    <small>Use <code translate="no">tabindex="0"</code> in conjunction with <code translate="no">role="button"</code> to ensure that the text button is focusable. Use <code translate="no">cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
                 </li>
             </ul>
 
@@ -1268,7 +1274,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
                 <h5>Notes:</h5>
                 <p>
-                    <small>Use <code>:hover</code>, <code>:focus</code>, and <code>:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
+                    <small>Use <code translate="no">:hover</code>, <code translate="no">:focus</code>, and <code translate="no">:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
                 </p>
             </div><!-- End of #subsection__buttons -->
         </fieldset><!-- End of #subsection__states-and-validation -->
