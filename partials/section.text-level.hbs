@@ -23,10 +23,10 @@
         <h4>Notes:</h4>
         <ul>
             <li>
-                <small><code>&lt;mark&gt;</code>, <code>&lt;ins&gt;</code>, <code>&lt;del&gt;</code>, and <code>&lt;s&gt;</code> elements are not announced by screen readers. Consider <a rel="external noopener" href="https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/">using CSS to indicate their presence</a>.</small>
+                <small><code translate="no">&lt;mark&gt;</code>, <code translate="no">&lt;ins&gt;</code>, <code translate="no">&lt;del&gt;</code>, and <code translate="no">&lt;s&gt;</code> elements are not announced by screen readers. Consider <a rel="external noopener" href="https://developer.paciellogroup.com/blog/2017/12/short-note-on-making-your-mark-more-accessible/">using CSS to indicate their presence</a>.</small>
             </li>
             <li>
-                <small>Use the <code>translate</code> attribute to control <a rel="external noopener" href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">automatic translation by the browser</a>.</small>
+                <small>Use the <code translate="no">translate</code> attribute to control <a rel="external noopener" href="https://html.spec.whatwg.org/multipage/dom.html#the-translate-attribute">automatic translation by the browser</a>.</small>
             </li>
         </ul>
     </div><!-- End of #subsection__content -->
@@ -131,13 +131,13 @@
     </div><!-- End of #subsection__lists -->
     <div id="subsection__code" aria-labelledby="subtitle__code"><!-- Start of #subsection__code -->
         <h3 id="subtitle__code">Code</h3>
-        <code>
+        <code translate="no">
             <pre>
 sudo ipfw pipe 1 config bw 256KByte/s
 sudo ipfw add 1 pipe 1 src-port 3000
             </pre>
         </code>
-        <samp>
+        <samp translate="no">
             <pre>
 ~/Sites/boilerplate
 ❦ ☢ ☭ ☂ ♞
@@ -154,6 +154,12 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 -rw-r--r-- 1 eric staff 58601 Mar 24 11:50 index.html
             </pre>
         </samp>
+
+        <h4>Notes:</h4>
+        <p>
+            <small>Apply <code translate="no">translate="no"</code> to markup that contains code examples to prevent keywords from being automatically translated.</small>
+        </p>
+
     </div><!-- End of #subsection__code -->
     <div id="subsection__symbols" aria-labelledby="subtitle__symbols"><!-- Start of #subsection__symbols -->
         <h3 id="subtitle__symbols">Symbols</h3>
@@ -174,7 +180,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
         <h4>Notes:</h4>
         <p>
-            <small>Certain screen readers will not <a rel="external noopener" href="http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">read certain symbols out loud</a>. Use <code>role="definition"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
+            <small>Certain screen readers will not <a rel="external noopener" href="http://www.deque.com/blog/dont-screen-readers-read-whats-screen-part-1-punctuation-typographic-symbols/">read certain symbols out loud</a>. Use <code translate="no">role="definition"</code> in conjunction with <code translate="no">aria-label</code> to ensure the symbol is read.</small>
         </p>
 
     </div><!-- End of #subsection__symbols -->
@@ -190,7 +196,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
         <h4>Notes:</h4>
         <p>
-            <small>Certain screen readers will not <a rel="external noopener" href="http://tink.uk/accessible-emoji/">expose emoji as images in the accessibility treee</a>. Use <code>role="img"</code> in conjunction with <code>aria-label</code> to ensure the symbol is read.</small>
+            <small>Certain screen readers will not <a rel="external noopener" href="http://tink.uk/accessible-emoji/">expose emoji as images in the accessibility treee</a>. Use <code translate="no">role="img"</code> in conjunction with <code translate="no">aria-label</code> to ensure the symbol is read.</small>
         </p>
     </div><!-- End of #subsection__emoji -->
 </section><!-- End of #section__text-level -->
