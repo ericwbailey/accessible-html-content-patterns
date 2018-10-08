@@ -1,1065 +1,1065 @@
 <!-- Start of #section-forms -->
 <section id="section-forms" aria-labelledby="title-forms">
-    <h2 id="title-forms">Forms</h2>
-    <form>
-        <!-- Start of #subsection-text-input -->
-        <fieldset id="subsection-text-input">
-            <legend>
-                <h3 id="subtitle-text-input">Text Input</h3>
-            </legend>
-
-            <label for="input-text">
-                Text
-                <input
-                    id="input-text"
-                    name="text"
-                    type="text" />
-            </label>
-
-            <label for="input-text-with-placeholder">
-                Text with Placeholder
-                <input
-                    id="input-text-with-placeholder"
-                    name="placeholder"
-                    placeholder="Placeholder"
-                    type="text" />
-            </label>
-
-            <label for="input-email">
-                Email
-                <input
-                    id="input-email"
-                    name="email"
-                    placeholder="name@example.com"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="email" />
-            </label>
-
-            <label for="input-password">
-                Password
-                <input
-                    id="input-password"
-                    name="password"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="password" />
-            </label>
-
-            <label for="input-url">
-                URL
-                <input
-                    id="input-url"
-                    name="url"
-                    autocapitalize="off"
-                    spellcheck="false"
-                    type="url" />
-            </label>
-
-            <label for="input-telephone">
-                Telephone
-                <input
-                    id="input-telephone"
-                    name="telephone"
-                    autocorrect="off"
-                    autocomplete="tel"
-                    spellcheck="false"
-                    type="tel" />
-            </label>
-
-            <label for="input-number">
-                Number
-                <input
-                    id="input-number"
-                    name="number"
-                    type="number" />
-            </label>
-
-            <label for="input-search">
-                Search
-                <input
-                    id="input-search"
-                    name="search"
-                    spellcheck="false"
-                    type="search" />
-            </label>
-
-            <label for="input-date">
-                Date
-                <input
-                    id="input-date"
-                    name="date"
-                    type="date" />
-            </label>
-
-            <label for="input-datetime-local">
-                Datetime-local
-                <input
-                    id="input-datetime-local"
-                    name="datetime-local"
-                    type="datetime-local" />
-            </label>
-
-            <label for="input-month">
-                Month
-                <input
-                    id="input-month"
-                    name="month"
-                    type="month" />
-            </label>
-
-            <label for="input-time">
-                Time
-                <input
-                    id="input-time"
-                    name="time"
-                    type="time" />
-            </label>
-
-            <label for="input-week">
-                Week
-                <input
-                    id="input-week"
-                    name="week"
-                    type="week" />
-            </label>
-
-            <label for="input-datalist">
-                Datalist
-                <input
-                    list="dog-breeds"
-                    id="input-datalist"
-                    name="datalist"
-                    type="text">
-                    <datalist id="dog-breeds">
-                        <option value="Beagles"></option>
-                        <option value="Boxers"></option>
-                        <option value="Bulldogs"></option>
-                        <option value="Dachshunds"></option>
-                        <option value="French Bulldogs"></option>
-                        <option value="German Shepherds"></option>
-                        <option value="German Shorthaired Pointers"></option>
-                        <option value="Golden Retrievers"></option>
-                        <option value="Labrador Retrievers"></option>
-                        <option value="Poodles"></option>
-                        <option value="Rottweilers"></option>
-                        <option value="Siberian Huskies"></option>
-                        <option value="Yorkshire Terriers"></option>
-                    </datalist>
-                </input>
-            </label>
-
-            <label for="input-textarea">
-                Textarea
-                <textarea
-                    id="input-textarea"
-                    name="textarea"
-                    dir="auto">
-                </textarea>
-            </label>
-        </fieldset>
-        <!-- End of #subsection-text-input -->
-
-        <!-- Start of #subsection-non-text-input -->
-        <fieldset id="subsection-non-text-input">
-            <legend>
-                <h3 id="subtitle-non-text-input">Non-text Input</h3>
-            </legend>
-
-            <label for="input-color">
-                Color
-                <input
-                    id="input-color"
-                    name="color"
-                    type="color" />
-            </label>
-
-            <label for="input-file">
-                File Input
-                <input
-                    id="input-file"
-                    name="file"
-                    type="file" />
-            </label>
-
-            <label for="input-range">
-                Range Input
-                <input
-                    id="input-range"
-                    name="range"
-                    type="range" />
-            </label>
-
-            <h4 id="notes-non-text-input">Notes:</h4>
-            <p>
-                <small>Some pointers on <a rel="external noopener" href="https://css-tricks.com/sliding-nightmare-understanding-range-input/">styling the range input</a>.</small>
-            </p>
-        </fieldset>
-        <!-- End of #subsection-non-text-input -->
-
-        <!-- Start of #subsection-select -->
-        <fieldset id="subsection-select">
-            <legend>
-                <h3 id="subtitle-select">Select</h3>
-            </legend>
-
-            <label for="input-select">
-                Select
-                <select
-                    id="input-select"
-                    name="select">
-                    <option value="corgis">Corgis</option>
-                    <option value="dachshunds">Dachshunds</option>
-                    <option value="shiba-inus">Shiba Inus</option>
-                </select>
-            </label>
-
-            <label for="input-select-with-optgroup">
-                Select with Optgroup
-                <select
-                    id="input-select-with-optgroup"
-                    name="select-with-optgroup">
-                    <optgroup label="Dog Breeds">
-                        <option value="affenpinscher">Affenpinscher</option>
-                        <option value="afghan-hound">Afghan Hound</option>
-                        <option value="afghan-shepherd">Afghan Shepherd</option>
-                        <option value="aidi">Aidi</option>
-                    </optgroup>
-                    <optgroup label="Cat Breeds">
-                        <option value="abyssinian">Abyssinian</option>
-                        <option value="aegean">Aegean</option>
-                        <option value="american-curl">American Curl</option>
-                        <option value="american-bobtail">American Bobtail</option>
-                    </optgroup>
-                </select>
-            </label>
-
-            <label for="input-multiple-select">
-                Multiple Select
-                <select
-                    multiple
-                    id="input-multiple-select"
-                    name="multiple-select">
-                    <option value="beagle">Beagle</option>
-                    <option value="bernese-mountain-dog">Bernese Mountain Dog</option>
-                    <option value="kuvasz">Kuvasz</option>
-                    <option value="newfoundland">Newfoundland</option>
-                    <option value="old-english-sheepdog">Old English Sheepdog</option>
-                    <option value="rottweiler">Rottweiler</option>
-                    <option value="schnauzer">Schnauzer</option>
-                </select>
-            </label>
-        </fieldset>
-        <!-- End of #subsection-select -->
-
-        <!-- Start of #subsection-checkboxes-and-radios -->
-        <fieldset id="subsection-checkboxes-and-radios">
-            <legend>
-                <h3 id="subtitle-checkboxes-and-radio-buttons">Checkboxes and Radio Buttons</h3>
-            </legend>
-
-            <label for="input-checkbox">
-                <input
-                    id="input-checkbox"
-                    name="checkbox"
-                    type="checkbox" />
-                Checkbox
-            </label>
-
-            <label for="input-checked-checkbox">
-                <input
-                    checked
-                    id="input-checked-checkbox"
-                    name="checked-checkbox"
-                    type="checkbox" />
-                Checked Checkbox
-            </label>
-
-            <label for="input-indeterminate-checkbox">
-                <input
-                    indeterminate
-                    id="input-indeterminate-checkbox"
-                    name="indeterminate-checkbox"
-                    type="checkbox" />
-                Indeterminate Checkbox
-            </label>
-
-            <fieldset>
-                <legend>Pizza Toppings</legend>
-
-                <label for="ham">
-                    <input
-                        id="ham"
-                        name="toppings"
-                        type="checkbox" />
-                    Ham
-                </label>
-
-                <label for="pepperoni">
-                    <input
-                        id="pepperoni"
-                        name="toppings"
-                        type="checkbox" />
-                    Pepperoni
-                </label>
-
-                <label for="mushrooms">
-                    <input
-                        id="mushrooms"
-                        name="toppings"
-                        type="checkbox" />
-                    Mushrooms
-                </label>
-
-                <label for="olives">
-                    <input
-                        id="olives"
-                        name="toppings"
-                        type="checkbox" />
-                    Olives
-                </label>
-
-            </fieldset>
-
-            <label for="input-radio">
-                <input
-                    id="input-radio"
-                    name="radio"
-                    type="radio" />
-                Radio Button
-            </label>
-
-            <label for="input-checked-radio">
-                <input
-                    checked
-                    id="input-checked-radio"
-                    name="checked-radio"
-                    type="radio" />
-                Checked Radio Button
-            </label>
-
-            <fieldset>
-                <legend>Beverage Size</legend>
-
-                <label for="small">
-                    <input
-                        id="small"
-                        name="beverage"
-                        type="radio" />
-                    Small
-                </label>
-
-                <label for="medium">
-                    <input
-                        id="medium"
-                        name="beverage"
-                        type="radio" />
-                    Medium
-                </label>
-
-                <label for="large">
-                    <input
-                        id="large"
-                        name="beverage"
-                        type="radio" />
-                    Large
-                </label>
-
-                <label for="x-large">
-                    <input
-                        id="x-large"
-                        name="beverage"
-                        type="radio" />
-                    Extra Large
-                </label>
-            </fieldset>
-        </fieldset>
-        <!-- End of #subsection-checkboxes-and-radios -->
-
-        <!-- Start of #subsection-buttons -->
-        <fieldset id="subsection-button-states">
-            <legend>
-                <h3 id="subtitle-button-states">Buttons</h3>
-            </legend>
-
-            <button type="button">
-                Button
-            </button>
-
-            <button
-                data-button-priority="primary"
-                type="button">
-                Primary Button
-            </button>
-
-            <button
-                data-button-priority="secondary"
-                 type="button">
-                Secondary Button
-            </button>
-
-            <input
-                name="button"
-                value="Input Button"
-                type="button" />
-
-            <button type="button" aria-label="Icon Button">
-                &#9742;
-            </button>
-
-            <button type="button">
-                <svg
-                    aria-hidden="true"
-                    height="16"
-                    width="16"
-                    focusable="false"
-                    viewBox="0 0 16 16"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path fill="#000000" fill-rule="evenodd" d="M8,16 C12.418278,16 16,12.418278 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 Z M8.28116557,3 C8.58745219,3 8.8466139,3.10719871 9.05865848,3.32159934 C9.27070306,3.53599997 9.37672376,3.79398367 9.37672376,4.09555819 C9.37672376,4.3971327 9.26952505,4.6539384 9.05512442,4.86598298 C8.84072379,5.07802756 8.58274009,5.18404826 8.28116557,5.18404826 C7.97959106,5.18404826 7.72278536,5.07802756 7.51074078,4.86598298 C7.2986962,4.6539384 7.1926755,4.3971327 7.1926755,4.09555819 C7.1926755,3.79398367 7.2986962,3.53599997 7.51074078,3.32159934 C7.72278536,3.10719871 7.97959106,3 8.28116557,3 Z M9.270702,6.20185716 L9.270702,11.4393321 C9.270702,11.9058302 9.32489036,12.2038662 9.4332687,12.333449 C9.54164704,12.4630318 9.75368844,12.5372462 10.0693993,12.5560947 L10.0693993,12.8105469 L6.5,12.8105469 L6.5,12.5560947 C6.79215031,12.5466704 7.00890374,12.4618539 7.1502668,12.3016424 C7.24450883,12.1932641 7.29162914,11.9058302 7.29162914,11.4393321 L7.29162914,7.58014004 C7.29162914,7.11364196 7.23744078,6.81560599 7.12906244,6.6860232 C7.0206841,6.5564404 6.81099872,6.48222591 6.5,6.4633775 L6.5,6.20185716 L9.270702,6.20185716 Z"/>
-                </svg>
-                Button with <abbr>SVG</abbr> icon
-            </button>
-
-            <span
-                role="button"
-                tabindex="0">
-                Text Button
-            </span>
-
-            <h4 id="notes-buttons">Notes:</h4>
-            <ul>
-                <li>
-                    <small>Add <code translate="no">type="button"</code> to <code translate="no">&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
-                </li>
-                <li>
-                    <small>Add <code translate="no">pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
-                </li>
-                <li>
-                    <small>Add <code translate="no">focusable="false"</code> to SVG inside of a focusable element (links, buttons, etc.) to prevent <a rel="external noopener" href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet Explorer</a>.</small>
-                </li>
-                <li>
-                    <small>Use <code translate="no">tabindex="0"</code> in conjunction with <code translate="no">role="button"</code> to ensure that the text button is focusable. Use <code translate="no">cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
-                </li>
-            </ul>
-        </fieldset>
-        <!-- End of #subsection-buttons -->
-
-        <!-- Start of #subsection-output -->
-        <fieldset id="subsection-output">
-            <legend>
-                <h3 id="subtitle-output">Output</h3>
-            </legend>
-
-            <output
-                for="output"
-                name="output">
-                Output
-            </output>
-
-            <progress
-                max="100"
-                value="65">
-            </progress>
-
-            <meter
-                min="200"
-                max="500"
-                value="350">
-                350 degrees
-            </meter>
-        </fieldset>
-        <!-- End of #subsection-output -->
-
-        <!-- Start of #subsection-lockup -->
-        <fieldset id="subsection-lockup">
-            <legend>
-                <h3 id="subtitle-lockup">Lockup</h3>
-            </legend>
-
-            <label for="input-lockup">
-                Your Name
-                <span>This is what we'll use to refer to you if we have to contact you</span>
-                <input
-                    id="input-lockup"
-                    name="lockup"
-                    placeholder="Firstname Lastname "
-                    type="text" />
-            </label>
-            <span>Can we send you periodic messages about your account?</span>
-            <label for="input-inline-interaction">
-                <input
-                    id="input-inline-interaction"
-                    name="inline-interaction"
-                    type="checkbox" />
-                I agree
-            </label>
-
-            <h4 id="notes-lockup">Notes:</h4>
-            <p>
-                <small>Place messaging above the input field so as to not be lost when magnification or focus on mobile occurs.</small>
-            </p>
-        </fieldset>
-        <!-- End of #subsection-lockup -->
-
-        <!-- Start of #subsection-states-and-validation -->
-        <fieldset id="subsection-states-and-validation">
-            <legend>
-                <h3 id="subtitle-states-and-validation">States and Validation</h3>
-            </legend>
-
-            <!-- Start of #subsection-input -->
-            <div id="subsection-input" role="region" aria-labelledby="subtitle-input">
-                <h4 id="subtitle-input">Input</h4>
-                <label for="input-required">
-                    Required
-                    <input
-                        required
-                        id="input-required"
-                        name="required"
-                        type="text" />
-                </label>
-
-                <label for="input-readonly">
-                    Readonly
-                    <input
-                        readonly
-                        value="Read Only"
-                        id="input-readonly"
-                        name="readonly"
-                        type="text" />
-                </label>
-
-                <label for="input-loading">
-                    Loading
-                    <input
-                        id="input-loading"
-                        name="loading"
-                        aria-busy="true"
-                        data-input-state="loading"
-                        type="text" />
-                </label>
-
-                <label for="input-disabled">
-                    Disabled
-                    <input
-                        disabled
-                        id="input-disabled"
-                        name="disabled"
-                        type="text" />
-                </label>
-
-                <label for="input-valid">
-                    Valid
-                    <input
-                        id="input-valid"
-                        name="valid"
-                        aria-invalid="false"
-                        type="text" />
-                </label>
-
-                <label for="input-invalid">
-                    Invalid
-                    <input
-                        id="input-invalid"
-                        name="invalid"
-                        aria-invalid="true"
-                        type="text" />
-                </label>
-
-                <label for="input-warning">
-                    Warning
-                    <input
-                        id="input-warning"
-                        name="warning"
-                        data-input-state="warning"
-                        type="text" />
-                </label>
-
-                <label for="input-search-with-autosave">
-                    Search with Autosave
-                    <input
-                        autosave
-                        id="input-search-with-autosave"
-                        name="search-with-autosave"
-                        type="search" />
-                </label>
-
-                <label for="input-pattern">
-                    Input with Pattern Validation
-                    <input
-                        pattern="[0-9]{13,16}"
-                        id="input-pattern"
-                        name="pattern"
-                        type="number" />
-                </label>
-
-                <label for="input-minlength">
-                    Minlength
-                    <input
-                        id="input-minlength"
-                        name="minlength"
-                        minlength="5"
-                        type="number" />
-                </label>
-
-                <label for="input-maxlength">
-                    Maxlength
-                    <input
-                        id="input-maxlength"
-                        name="maxlength"
-                        maxlength="10"
-                        type="number" />
-                </label>
-            </div>
-            <!-- End of #subsection-input -->
-
-            <!-- Start of #subsection-buttons -->
-            <div id="subsection-buttons" role="region" aria-labelledby="subtitle-buttons">
-                <h4 id="subtitle-buttons">Buttons</h4>
-                <button
-                    disabled
-                    type="button">
-                    Disabled
-                </button>
-
-                <button
-                    aria-busy="true"
-                    type="button">
-                    Loading
-                </button>
-
-                <h5 id="notes-button-states-and-validation">Notes:</h5>
-                <p>
-                    <small>Use <code translate="no">:hover</code>, <code translate="no">:focus</code>, and <code translate="no">:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
-                </p>
-            </div>
-            <!-- End of #subsection-buttons -->
-        </fieldset>
-        <!-- End of #subsection-states-and-validation -->
-
-        <!-- Start of #subsection-autocomplete -->
-        <fieldset id="subsection-autocomplete">
-            <legend>
-                <h3 id="subtitle-autocomplete">Autocomplete</h3>
-            </legend>
-
-            <label for="input-autocomplete-on">
-                On (Browser automatically completes)
-                <input
-                    id="input-autocomplete-on"
-                    name="autocomplete-on"
-                    autocomplete="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-name">
-                Name (Full name)
-                <input
-                    id="input-autocomplete-name"
-                    name="autocomplete-name"
-                    autocomplete="name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-honorific-prefix">
-                Honorific Prefix (Mr., Ms., Dr., etc.)
-                <input
-                    id="input-autocomplete-honorific-prefix"
-                    name="autocomplete-honorific-prefix"
-                    autocomplete="honorific-prefix"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-additional-name">
-                Additional Name
-                <input
-                    id="input-autocomplete-additional-name"
-                    name="autocomplete-additional-name"
-                    autocomplete="additional-name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-family-name">
-                Family Name
-                <input
-                    id="input-autocomplete-family-name"
-                    name="autocomplete-family-name"
-                    autocomplete="family-name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-honorific-suffix">
-                Honorific Suffix (Jr., II, etc.)
-                <input
-                    id="input-autocomplete-honorific-suffix"
-                    name="autocomplete-honorific-suffix"
-                    autocomplete="honorific-suffix"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-nickname">
-                Nickname
-                <input
-                    id="input-autocomplete-nickname"
-                    name="autocomplete-nickname"
-                    autocomplete="nickname"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-email">
-                Email
-                <input
-                    id="input-autocomplete-email"
-                    name="autocomplete-email"
-                    autocomplete="email"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-username">
-                Username
-                <input
-                    id="input-autocomplete-username"
-                    name="autocomplete-username"
-                    autocomplete="username"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-new-password">
-                New Password
-                <input
-                    id="input-autocomplete-new-password"
-                    name="autocomplete-new-password"
-                    autocomplete="new-password"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-current-password">
-                Current Password
-                <input
-                    id="input-autocomplete-current-password"
-                    name="autocomplete-current-password"
-                    autocomplete="current-password"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-organization-title">
-                Organization Title
-                <input
-                    id="input-autocomplete-organization-title"
-                    name="autocomplete-organization-title"
-                    autocomplete="organization-title"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-organization">
-                Organization
-                <input
-                    id="input-autocomplete-organization"
-                    name="autocomplete-organization"
-                    autocomplete="organization"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-street-address">
-                Street Address
-                <input
-                    id="input-autocomplete-street-address"
-                    name="autocomplete-street-address"
-                    autocomplete="shipping street-address"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-address-line1">
-                Address Line 1 (Can use address-line1-3)
-                <input
-                    id="input-autocomplete-address-line1"
-                    name="autocomplete-address-line1"
-                    autocomplete="address-line1"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-address-level4">
-                Address Level 4 (Can use address-level4-1)
-                <input
-                    id="input-autocomplete-address-level4"
-                    name="autocomplete-address-level4"
-                    autocomplete="address-level4"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-country">
-                Country
-                <input
-                    id="input-autocomplete-country"
-                    name="autocomplete-country"
-                    autocomplete="country"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-country-name">
-                Country Name
-                <input
-                    id="input-autocomplete-country-name"
-                    name="autocomplete-country-name"
-                    autocomplete="country-name"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-postal-code">
-                Postal Code
-                <input
-                    novalidate
-                    id="input-autocomplete-postal-code"
-                    name="autocomplete-postal-code"
-                    autocomplete="shipping postal-code"
-                    autocorrect="off"
-                    type="number" />
-            </label>
-
-            <label for="input-autocomplete-cc-name">
-                CC Name (Full name as given on the payment instrument)
-                <input
-                    id="input-autocomplete-cc-name"
-                    name="autocomplete-cc-name"
-                    autocomplete="cc-name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-cc-given-name">
-                CC Given Name
-                <input
-                    id="input-autocomplete-cc-given-name"
-                    name="autocomplete-cc-given-name"
-                    autocomplete="cc-given-name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-cc-additional-name">
-                CC Additional Name
-                <input
-                    id="input-autocomplete-cc-additional-name"
-                    name="autocomplete-cc-additional-name"
-                    autocomplete="cc-additional-name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-cc-family-name">
-                CC Family Name
-                <input
-                    id="input-autocomplete-cc-family-name"
-                    name="autocomplete-cc-family-name"
-                    autocomplete="cc-family-name"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-cc-number">
-                CC Number
-                <input
-                    novalidate
-                    id="input-autocomplete-cc-number"
-                    name="autocomplete-cc-number"
-                    pattern="\d*"
-                    autocomplete="cc-number"
-                    autocorrect="off"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-cc-exp">
-                CC Exp
-                <input
-                    novalidate
-                    id="input-autocomplete-cc-exp"
-                    name="autocomplete-cc-exp"
-                    pattern="\d*"
-                    autocomplete="cc-exp"
-                    autocorrect="off"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-cc-exp-month">
-                CC Exp Month
-                <input
-                    novalidate
-                    id="input-autocomplete-cc-exp-month"
-                    name="autocomplete-cc-exp-month"
-                    pattern="\d*"
-                    autocomplete="cc-exp-month"
-                    autocorrect="off"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-cc-exp-year">
-                CC Exp Year
-                <input
-                    novalidate
-                    id="input-autocomplete-cc-exp-year"
-                    name="autocomplete-cc-exp-year"
-                    pattern="\d*"
-                    autocomplete="cc-exp-year"
-                    autocorrect="off"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-cc-csc">
-                CC CSC (Security code)
-                <input
-                    novalidate
-                    id="input-autocomplete-cc-csc"
-                    name="autocomplete-cc-csc"
-                    pattern="\d*"
-                    autocomplete="cc-csc"
-                    autocorrect="off"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-cc-type">
-                CC Type (Visa, American Express, etc.)
-                <input
-                    id="input-autocomplete-cc-type"
-                    name="autocomplete-cc-type"
-                    autocomplete="cc-type"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-transaction-currency">
-                Transaction Currency
-                <input
-                    id="input-autocomplete-transaction-currency"
-                    name="autocomplete-transaction-currency"
-                    autocomplete="transaction-currency"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-transaction-amount">
-                Transaction Amount
-                <input
-                    id="input-autocomplete-transaction-amount"
-                    name="autocomplete-transaction-amount"
-                    pattern="\d*"
-                    autocomplete="transaction-amount"
-                    type="number" />
-            </label>
-
-            <label for="input-autocomplete-language">
-                Language (Valid BCP 47 language tag)
-                <input
-                    id="input-autocomplete-language"
-                    name="autocomplete-language"
-                    autocomplete="language"
-                    autocapitalize="on"
-                    autocorrect="off"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-bday">
-                Bday
-                <input
-                    id="input-autocomplete-bday"
-                    name="autocomplete-bday"
-                    autocomplete="bday"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-bday-day">
-                Bday-day
-                <input
-                    id="input-autocomplete-bday-day"
-                    name="autocomplete-bday-day"
-                    pattern="\d*"
-                    autocomplete="bday-day"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-bday-month">
-                Bday-month
-                <input
-                    id="input-autocomplete-bday-month"
-                    name="autocomplete-bday-month"
-                    pattern="\d*"
-                    autocomplete="bday-month"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-bday-year">
-                Bday-year
-                <input
-                    id="input-autocomplete-bday-year"
-                    name="autocomplete-bday-year"
-                    pattern="\d*"
-                    autocomplete="bday-year"
-                    type="tel" />
-            </label>
-
-            <label for="input-autocomplete-sex">
-                Sex (Gender identity; free-form text, no newlines)
-                <input
-                    id="input-autocomplete-sex"
-                    name="autocomplete-sex"
-                    autocomplete="sex"
-                    autocapitalize="on"
-                    type="text" />
-            </label>
-
-            <label for="input-autocomplete-url">
-                URL
-                <input
-                    id="input-autocomplete-url"
-                    name="autocomplete-url"
-                    autocomplete="url"
-                    autocapitalize="off"
-                    autocorrect="off"
-                    spellcheck="false"
-                    type="url" />
-            </label>
-
-            <label for="input-autocomplete-photo">
-                Photo
-                <input
-                    id="input-autocomplete-photo"
-                    name="autocomplete-photo"
-                    autocomplete="photo"
-                    type="file" />
-            </label>
-
-            <h4 id="notes-autocomplete">Notes:</h4>
-            <p>
-                <small>Be sure to reference the <a rel="external noopener" href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers Believe</cite></a> collection for creating bulletproof inputs.</small>
-            </p>
-        </fieldset>
-        <!-- End of #subsection-autocomplete -->
-    </form>
+  <h2 id="title-forms">Forms</h2>
+  <form>
+    <!-- Start of #subsection-text-input -->
+    <fieldset id="subsection-text-input">
+      <legend>
+        <h3 id="subtitle-text-input">Text Input</h3>
+      </legend>
+
+      <label for="input-text">
+        Text
+        <input
+          id="input-text"
+          name="text"
+          type="text" />
+      </label>
+
+      <label for="input-text-with-placeholder">
+        Text with Placeholder
+        <input
+          id="input-text-with-placeholder"
+          name="placeholder"
+          placeholder="Placeholder"
+          type="text" />
+      </label>
+
+      <label for="input-email">
+        Email
+        <input
+          id="input-email"
+          name="email"
+          placeholder="name@example.com"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="email" />
+      </label>
+
+      <label for="input-password">
+        Password
+        <input
+          id="input-password"
+          name="password"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="password" />
+      </label>
+
+      <label for="input-url">
+        URL
+        <input
+          id="input-url"
+          name="url"
+          autocapitalize="off"
+          spellcheck="false"
+          type="url" />
+      </label>
+
+      <label for="input-telephone">
+        Telephone
+        <input
+          id="input-telephone"
+          name="telephone"
+          autocorrect="off"
+          autocomplete="tel"
+          spellcheck="false"
+          type="tel" />
+      </label>
+
+      <label for="input-number">
+        Number
+        <input
+          id="input-number"
+          name="number"
+          type="number" />
+      </label>
+
+      <label for="input-search">
+        Search
+        <input
+          id="input-search"
+          name="search"
+          spellcheck="false"
+          type="search" />
+      </label>
+
+      <label for="input-date">
+        Date
+        <input
+          id="input-date"
+          name="date"
+          type="date" />
+      </label>
+
+      <label for="input-datetime-local">
+        Datetime-local
+        <input
+          id="input-datetime-local"
+          name="datetime-local"
+          type="datetime-local" />
+      </label>
+
+      <label for="input-month">
+        Month
+        <input
+          id="input-month"
+          name="month"
+          type="month" />
+      </label>
+
+      <label for="input-time">
+        Time
+        <input
+          id="input-time"
+          name="time"
+          type="time" />
+      </label>
+
+      <label for="input-week">
+        Week
+        <input
+          id="input-week"
+          name="week"
+          type="week" />
+      </label>
+
+      <label for="input-datalist">
+        Datalist
+        <input
+          list="dog-breeds"
+          id="input-datalist"
+          name="datalist"
+          type="text">
+          <datalist id="dog-breeds">
+            <option value="Beagles"></option>
+            <option value="Boxers"></option>
+            <option value="Bulldogs"></option>
+            <option value="Dachshunds"></option>
+            <option value="French Bulldogs"></option>
+            <option value="German Shepherds"></option>
+            <option value="German Shorthaired Pointers"></option>
+            <option value="Golden Retrievers"></option>
+            <option value="Labrador Retrievers"></option>
+            <option value="Poodles"></option>
+            <option value="Rottweilers"></option>
+            <option value="Siberian Huskies"></option>
+            <option value="Yorkshire Terriers"></option>
+            </datalist>
+          </input>
+      </label>
+
+      <label for="input-textarea">
+        Textarea
+        <textarea
+          id="input-textarea"
+          name="textarea"
+          dir="auto">
+        </textarea>
+      </label>
+    </fieldset>
+    <!-- End of #subsection-text-input -->
+
+    <!-- Start of #subsection-non-text-input -->
+    <fieldset id="subsection-non-text-input">
+      <legend>
+        <h3 id="subtitle-non-text-input">Non-text Input</h3>
+      </legend>
+
+      <label for="input-color">
+        Color
+        <input
+          id="input-color"
+          name="color"
+          type="color" />
+      </label>
+
+      <label for="input-file">
+        File Input
+        <input
+          id="input-file"
+          name="file"
+          type="file" />
+      </label>
+
+      <label for="input-range">
+        Range Input
+        <input
+          id="input-range"
+          name="range"
+          type="range" />
+      </label>
+
+      <h4 id="notes-non-text-input">Notes:</h4>
+      <p>
+        <small>Some pointers on <a rel="external noopener" href="https://css-tricks.com/sliding-nightmare-understanding-range-input/">styling the range input</a>.</small>
+      </p>
+    </fieldset>
+    <!-- End of #subsection-non-text-input -->
+
+    <!-- Start of #subsection-select -->
+    <fieldset id="subsection-select">
+      <legend>
+        <h3 id="subtitle-select">Select</h3>
+      </legend>
+
+      <label for="input-select">
+        Select
+        <select
+          id="input-select"
+          name="select">
+          <option value="corgis">Corgis</option>
+          <option value="dachshunds">Dachshunds</option>
+          <option value="shiba-inus">Shiba Inus</option>
+        </select>
+      </label>
+
+      <label for="input-select-with-optgroup">
+        Select with Optgroup
+        <select
+          id="input-select-with-optgroup"
+          name="select-with-optgroup">
+          <optgroup label="Dog Breeds">
+            <option value="affenpinscher">Affenpinscher</option>
+            <option value="afghan-hound">Afghan Hound</option>
+            <option value="afghan-shepherd">Afghan Shepherd</option>
+            <option value="aidi">Aidi</option>
+          </optgroup>
+          <optgroup label="Cat Breeds">
+            <option value="abyssinian">Abyssinian</option>
+            <option value="aegean">Aegean</option>
+            <option value="american-curl">American Curl</option>
+            <option value="american-bobtail">American Bobtail</option>
+          </optgroup>
+        </select>
+      </label>
+
+      <label for="input-multiple-select">
+        Multiple Select
+        <select
+          multiple
+          id="input-multiple-select"
+          name="multiple-select">
+          <option value="beagle">Beagle</option>
+          <option value="bernese-mountain-dog">Bernese Mountain Dog</option>
+          <option value="kuvasz">Kuvasz</option>
+          <option value="newfoundland">Newfoundland</option>
+          <option value="old-english-sheepdog">Old English Sheepdog</option>
+          <option value="rottweiler">Rottweiler</option>
+          <option value="schnauzer">Schnauzer</option>
+        </select>
+      </label>
+    </fieldset>
+    <!-- End of #subsection-select -->
+
+    <!-- Start of #subsection-checkboxes-and-radios -->
+    <fieldset id="subsection-checkboxes-and-radios">
+      <legend>
+        <h3 id="subtitle-checkboxes-and-radio-buttons">Checkboxes and Radio Buttons</h3>
+      </legend>
+
+      <label for="input-checkbox">
+        <input
+          id="input-checkbox"
+          name="checkbox"
+          type="checkbox" />
+        Checkbox
+      </label>
+
+      <label for="input-checked-checkbox">
+        <input
+          checked
+          id="input-checked-checkbox"
+          name="checked-checkbox"
+          type="checkbox" />
+        Checked Checkbox
+      </label>
+
+      <label for="input-indeterminate-checkbox">
+        <input
+          indeterminate
+          id="input-indeterminate-checkbox"
+          name="indeterminate-checkbox"
+          type="checkbox" />
+        Indeterminate Checkbox
+      </label>
+
+      <fieldset>
+        <legend>Pizza Toppings</legend>
+
+        <label for="ham">
+          <input
+            id="ham"
+            name="toppings"
+            type="checkbox" />
+          Ham
+        </label>
+
+        <label for="pepperoni">
+          <input
+            id="pepperoni"
+            name="toppings"
+            type="checkbox" />
+          Pepperoni
+        </label>
+
+        <label for="mushrooms">
+          <input
+            id="mushrooms"
+            name="toppings"
+            type="checkbox" />
+          Mushrooms
+        </label>
+
+        <label for="olives">
+          <input
+            id="olives"
+            name="toppings"
+            type="checkbox" />
+          Olives
+        </label>
+
+      </fieldset>
+
+      <label for="input-radio">
+        <input
+          id="input-radio"
+          name="radio"
+          type="radio" />
+        Radio Button
+      </label>
+
+      <label for="input-checked-radio">
+        <input
+          checked
+          id="input-checked-radio"
+          name="checked-radio"
+          type="radio" />
+        Checked Radio Button
+      </label>
+
+      <fieldset>
+        <legend>Beverage Size</legend>
+
+        <label for="small">
+          <input
+            id="small"
+            name="beverage"
+            type="radio" />
+          Small
+        </label>
+
+        <label for="medium">
+          <input
+            id="medium"
+            name="beverage"
+            type="radio" />
+          Medium
+        </label>
+
+        <label for="large">
+          <input
+            id="large"
+            name="beverage"
+            type="radio" />
+          Large
+        </label>
+
+        <label for="x-large">
+          <input
+            id="x-large"
+            name="beverage"
+            type="radio" />
+          Extra Large
+        </label>
+      </fieldset>
+    </fieldset>
+    <!-- End of #subsection-checkboxes-and-radios -->
+
+    <!-- Start of #subsection-buttons -->
+    <fieldset id="subsection-button-states">
+      <legend>
+        <h3 id="subtitle-button-states">Buttons</h3>
+      </legend>
+
+      <button type="button">
+        Button
+      </button>
+
+      <button
+        data-button-priority="primary"
+        type="button">
+        Primary Button
+      </button>
+
+      <button
+        data-button-priority="secondary"
+        type="button">
+        Secondary Button
+      </button>
+
+      <input
+        name="button"
+        value="Input Button"
+        type="button" />
+
+      <button type="button" aria-label="Icon Button">
+        &#9742;
+      </button>
+
+      <button type="button">
+        <svg
+          aria-hidden="true"
+          height="16"
+          width="16"
+          focusable="false"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg">
+          <path fill="#000000" fill-rule="evenodd" d="M8,16 C12.418278,16 16,12.418278 16,8 C16,3.581722 12.418278,0 8,0 C3.581722,0 0,3.581722 0,8 C0,12.418278 3.581722,16 8,16 Z M8.28116557,3 C8.58745219,3 8.8466139,3.10719871 9.05865848,3.32159934 C9.27070306,3.53599997 9.37672376,3.79398367 9.37672376,4.09555819 C9.37672376,4.3971327 9.26952505,4.6539384 9.05512442,4.86598298 C8.84072379,5.07802756 8.58274009,5.18404826 8.28116557,5.18404826 C7.97959106,5.18404826 7.72278536,5.07802756 7.51074078,4.86598298 C7.2986962,4.6539384 7.1926755,4.3971327 7.1926755,4.09555819 C7.1926755,3.79398367 7.2986962,3.53599997 7.51074078,3.32159934 C7.72278536,3.10719871 7.97959106,3 8.28116557,3 Z M9.270702,6.20185716 L9.270702,11.4393321 C9.270702,11.9058302 9.32489036,12.2038662 9.4332687,12.333449 C9.54164704,12.4630318 9.75368844,12.5372462 10.0693993,12.5560947 L10.0693993,12.8105469 L6.5,12.8105469 L6.5,12.5560947 C6.79215031,12.5466704 7.00890374,12.4618539 7.1502668,12.3016424 C7.24450883,12.1932641 7.29162914,11.9058302 7.29162914,11.4393321 L7.29162914,7.58014004 C7.29162914,7.11364196 7.23744078,6.81560599 7.12906244,6.6860232 C7.0206841,6.5564404 6.81099872,6.48222591 6.5,6.4633775 L6.5,6.20185716 L9.270702,6.20185716 Z"/>
+        </svg>
+        Button with <abbr>SVG</abbr> icon
+      </button>
+
+      <span
+        role="button"
+        tabindex="0">
+        Text Button
+      </span>
+
+      <h4 id="notes-buttons">Notes:</h4>
+      <ul>
+        <li>
+          <small>Add <code translate="no">type="button"</code> to <code translate="no">&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
+        </li>
+        <li>
+          <small>Add <code translate="no">pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
+        </li>
+        <li>
+          <small>Add <code translate="no">focusable="false"</code> to SVG inside of a focusable element (links, buttons, etc.) to prevent <a rel="external noopener" href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet Explorer</a>.</small>
+        </li>
+        <li>
+          <small>Use <code translate="no">tabindex="0"</code> in conjunction with <code translate="no">role="button"</code> to ensure that the text button is focusable. Use <code translate="no">cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
+        </li>
+      </ul>
+    </fieldset>
+    <!-- End of #subsection-buttons -->
+
+    <!-- Start of #subsection-output -->
+    <fieldset id="subsection-output">
+      <legend>
+        <h3 id="subtitle-output">Output</h3>
+      </legend>
+
+      <output
+        for="output"
+        name="output">
+        Output
+      </output>
+
+      <progress
+        max="100"
+        value="65">
+      </progress>
+
+      <meter
+        min="200"
+        max="500"
+        value="350">
+        350 degrees
+      </meter>
+    </fieldset>
+    <!-- End of #subsection-output -->
+
+    <!-- Start of #subsection-lockup -->
+    <fieldset id="subsection-lockup">
+      <legend>
+        <h3 id="subtitle-lockup">Lockup</h3>
+      </legend>
+
+      <label for="input-lockup">
+        Your Name
+        <span>This is what we'll use to refer to you if we have to contact you</span>
+        <input
+          id="input-lockup"
+          name="lockup"
+          placeholder="Firstname Lastname "
+          type="text" />
+      </label>
+      <span>Can we send you periodic messages about your account?</span>
+      <label for="input-inline-interaction">
+        <input
+          id="input-inline-interaction"
+          name="inline-interaction"
+          type="checkbox" />
+        I agree
+      </label>
+
+      <h4 id="notes-lockup">Notes:</h4>
+      <p>
+        <small>Place messaging above the input field so as to not be lost when magnification or focus on mobile occurs.</small>
+      </p>
+    </fieldset>
+    <!-- End of #subsection-lockup -->
+
+    <!-- Start of #subsection-states-and-validation -->
+    <fieldset id="subsection-states-and-validation">
+      <legend>
+        <h3 id="subtitle-states-and-validation">States and Validation</h3>
+      </legend>
+
+      <!-- Start of #subsection-input -->
+      <div id="subsection-input" role="region" aria-labelledby="subtitle-input">
+        <h4 id="subtitle-input">Input</h4>
+        <label for="input-required">
+          Required
+          <input
+            required
+            id="input-required"
+            name="required"
+            type="text" />
+        </label>
+
+        <label for="input-readonly">
+          Readonly
+          <input
+            readonly
+            value="Read Only"
+            id="input-readonly"
+            name="readonly"
+            type="text" />
+        </label>
+
+        <label for="input-loading">
+          Loading
+          <input
+            id="input-loading"
+            name="loading"
+            aria-busy="true"
+            data-input-state="loading"
+            type="text" />
+        </label>
+
+        <label for="input-disabled">
+          Disabled
+          <input
+            disabled
+            id="input-disabled"
+            name="disabled"
+            type="text" />
+        </label>
+
+        <label for="input-valid">
+          Valid
+          <input
+            id="input-valid"
+            name="valid"
+            aria-invalid="false"
+            type="text" />
+        </label>
+
+        <label for="input-invalid">
+          Invalid
+          <input
+            id="input-invalid"
+            name="invalid"
+            aria-invalid="true"
+            type="text" />
+        </label>
+
+        <label for="input-warning">
+          Warning
+          <input
+            id="input-warning"
+            name="warning"
+            data-input-state="warning"
+            type="text" />
+        </label>
+
+        <label for="input-search-with-autosave">
+          Search with Autosave
+          <input
+            autosave
+            id="input-search-with-autosave"
+            name="search-with-autosave"
+            type="search" />
+        </label>
+
+        <label for="input-pattern">
+          Input with Pattern Validation
+          <input
+            pattern="[0-9]{13,16}"
+            id="input-pattern"
+            name="pattern"
+            type="number" />
+        </label>
+
+        <label for="input-minlength">
+          Minlength
+          <input
+            id="input-minlength"
+            name="minlength"
+            minlength="5"
+            type="number" />
+        </label>
+
+        <label for="input-maxlength">
+          Maxlength
+          <input
+            id="input-maxlength"
+            name="maxlength"
+            maxlength="10"
+            type="number" />
+        </label>
+      </div>
+      <!-- End of #subsection-input -->
+
+      <!-- Start of #subsection-buttons -->
+      <div id="subsection-buttons" role="region" aria-labelledby="subtitle-buttons">
+        <h4 id="subtitle-buttons">Buttons</h4>
+        <button
+          disabled
+          type="button">
+          Disabled
+        </button>
+
+        <button
+          aria-busy="true"
+          type="button">
+          Loading
+        </button>
+
+        <h5 id="notes-button-states-and-validation">Notes:</h5>
+        <p>
+          <small>Use <code translate="no">:hover</code>, <code translate="no">:focus</code>, and <code translate="no">:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
+        </p>
+      </div>
+      <!-- End of #subsection-buttons -->
+    </fieldset>
+    <!-- End of #subsection-states-and-validation -->
+
+    <!-- Start of #subsection-autocomplete -->
+    <fieldset id="subsection-autocomplete">
+      <legend>
+        <h3 id="subtitle-autocomplete">Autocomplete</h3>
+      </legend>
+
+      <label for="input-autocomplete-on">
+        On (Browser automatically completes)
+        <input
+          id="input-autocomplete-on"
+          name="autocomplete-on"
+          autocomplete="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-name">
+        Name (Full name)
+        <input
+          id="input-autocomplete-name"
+          name="autocomplete-name"
+          autocomplete="name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-honorific-prefix">
+        Honorific Prefix (Mr., Ms., Dr., etc.)
+        <input
+          id="input-autocomplete-honorific-prefix"
+          name="autocomplete-honorific-prefix"
+          autocomplete="honorific-prefix"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-additional-name">
+        Additional Name
+        <input
+          id="input-autocomplete-additional-name"
+          name="autocomplete-additional-name"
+          autocomplete="additional-name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-family-name">
+        Family Name
+        <input
+          id="input-autocomplete-family-name"
+          name="autocomplete-family-name"
+          autocomplete="family-name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-honorific-suffix">
+        Honorific Suffix (Jr., II, etc.)
+        <input
+          id="input-autocomplete-honorific-suffix"
+          name="autocomplete-honorific-suffix"
+          autocomplete="honorific-suffix"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-nickname">
+        Nickname
+        <input
+          id="input-autocomplete-nickname"
+          name="autocomplete-nickname"
+          autocomplete="nickname"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-email">
+        Email
+        <input
+          id="input-autocomplete-email"
+          name="autocomplete-email"
+          autocomplete="email"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-username">
+        Username
+        <input
+          id="input-autocomplete-username"
+          name="autocomplete-username"
+          autocomplete="username"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-new-password">
+        New Password
+        <input
+          id="input-autocomplete-new-password"
+          name="autocomplete-new-password"
+          autocomplete="new-password"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-current-password">
+        Current Password
+        <input
+          id="input-autocomplete-current-password"
+          name="autocomplete-current-password"
+          autocomplete="current-password"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-organization-title">
+        Organization Title
+        <input
+          id="input-autocomplete-organization-title"
+          name="autocomplete-organization-title"
+          autocomplete="organization-title"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-organization">
+        Organization
+        <input
+          id="input-autocomplete-organization"
+          name="autocomplete-organization"
+          autocomplete="organization"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-street-address">
+        Street Address
+        <input
+          id="input-autocomplete-street-address"
+          name="autocomplete-street-address"
+          autocomplete="shipping street-address"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-address-line1">
+        Address Line 1 (Can use address-line1-3)
+        <input
+          id="input-autocomplete-address-line1"
+          name="autocomplete-address-line1"
+          autocomplete="address-line1"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-address-level4">
+        Address Level 4 (Can use address-level4-1)
+        <input
+          id="input-autocomplete-address-level4"
+          name="autocomplete-address-level4"
+          autocomplete="address-level4"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-country">
+        Country
+        <input
+          id="input-autocomplete-country"
+          name="autocomplete-country"
+          autocomplete="country"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-country-name">
+        Country Name
+        <input
+          id="input-autocomplete-country-name"
+          name="autocomplete-country-name"
+          autocomplete="country-name"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-postal-code">
+        Postal Code
+        <input
+          novalidate
+          id="input-autocomplete-postal-code"
+          name="autocomplete-postal-code"
+          autocomplete="shipping postal-code"
+          autocorrect="off"
+          type="number" />
+      </label>
+
+      <label for="input-autocomplete-cc-name">
+        CC Name (Full name as given on the payment instrument)
+        <input
+          id="input-autocomplete-cc-name"
+          name="autocomplete-cc-name"
+          autocomplete="cc-name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-cc-given-name">
+        CC Given Name
+        <input
+          id="input-autocomplete-cc-given-name"
+          name="autocomplete-cc-given-name"
+          autocomplete="cc-given-name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-cc-additional-name">
+        CC Additional Name
+        <input
+          id="input-autocomplete-cc-additional-name"
+          name="autocomplete-cc-additional-name"
+          autocomplete="cc-additional-name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-cc-family-name">
+        CC Family Name
+        <input
+          id="input-autocomplete-cc-family-name"
+          name="autocomplete-cc-family-name"
+          autocomplete="cc-family-name"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-cc-number">
+        CC Number
+        <input
+          novalidate
+          id="input-autocomplete-cc-number"
+          name="autocomplete-cc-number"
+          pattern="\d*"
+          autocomplete="cc-number"
+          autocorrect="off"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-cc-exp">
+        CC Exp
+        <input
+          novalidate
+          id="input-autocomplete-cc-exp"
+          name="autocomplete-cc-exp"
+          pattern="\d*"
+          autocomplete="cc-exp"
+          autocorrect="off"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-cc-exp-month">
+        CC Exp Month
+        <input
+          novalidate
+          id="input-autocomplete-cc-exp-month"
+          name="autocomplete-cc-exp-month"
+          pattern="\d*"
+          autocomplete="cc-exp-month"
+          autocorrect="off"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-cc-exp-year">
+        CC Exp Year
+        <input
+          novalidate
+          id="input-autocomplete-cc-exp-year"
+          name="autocomplete-cc-exp-year"
+          pattern="\d*"
+          autocomplete="cc-exp-year"
+          autocorrect="off"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-cc-csc">
+        CC CSC (Security code)
+        <input
+          novalidate
+          id="input-autocomplete-cc-csc"
+          name="autocomplete-cc-csc"
+          pattern="\d*"
+          autocomplete="cc-csc"
+          autocorrect="off"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-cc-type">
+        CC Type (Visa, American Express, etc.)
+        <input
+          id="input-autocomplete-cc-type"
+          name="autocomplete-cc-type"
+          autocomplete="cc-type"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-transaction-currency">
+        Transaction Currency
+        <input
+          id="input-autocomplete-transaction-currency"
+          name="autocomplete-transaction-currency"
+          autocomplete="transaction-currency"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-transaction-amount">
+        Transaction Amount
+        <input
+          id="input-autocomplete-transaction-amount"
+          name="autocomplete-transaction-amount"
+          pattern="\d*"
+          autocomplete="transaction-amount"
+          type="number" />
+      </label>
+
+      <label for="input-autocomplete-language">
+        Language (Valid BCP 47 language tag)
+        <input
+          id="input-autocomplete-language"
+          name="autocomplete-language"
+          autocomplete="language"
+          autocapitalize="on"
+          autocorrect="off"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-bday">
+        Bday
+        <input
+          id="input-autocomplete-bday"
+          name="autocomplete-bday"
+          autocomplete="bday"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-bday-day">
+        Bday-day
+        <input
+          id="input-autocomplete-bday-day"
+          name="autocomplete-bday-day"
+          pattern="\d*"
+          autocomplete="bday-day"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-bday-month">
+        Bday-month
+        <input
+          id="input-autocomplete-bday-month"
+          name="autocomplete-bday-month"
+          pattern="\d*"
+          autocomplete="bday-month"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-bday-year">
+        Bday-year
+        <input
+          id="input-autocomplete-bday-year"
+          name="autocomplete-bday-year"
+          pattern="\d*"
+          autocomplete="bday-year"
+          type="tel" />
+      </label>
+
+      <label for="input-autocomplete-sex">
+        Sex (Gender identity; free-form text, no newlines)
+        <input
+          id="input-autocomplete-sex"
+          name="autocomplete-sex"
+          autocomplete="sex"
+          autocapitalize="on"
+          type="text" />
+      </label>
+
+      <label for="input-autocomplete-url">
+        URL
+        <input
+          id="input-autocomplete-url"
+          name="autocomplete-url"
+          autocomplete="url"
+          autocapitalize="off"
+          autocorrect="off"
+          spellcheck="false"
+          type="url" />
+      </label>
+
+      <label for="input-autocomplete-photo">
+        Photo
+        <input
+          id="input-autocomplete-photo"
+          name="autocomplete-photo"
+          autocomplete="photo"
+          type="file" />
+      </label>
+
+      <h4 id="notes-autocomplete">Notes:</h4>
+      <p>
+        <small>Be sure to reference the <a rel="external noopener" href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers Believe</cite></a> collection for creating bulletproof inputs.</small>
+      </p>
+    </fieldset>
+    <!-- End of #subsection-autocomplete -->
+  </form>
 
 </section>
 <!-- End of #section-forms -->
