@@ -3,7 +3,7 @@
     <h2 id="title-forms">Forms</h2>
     <form>
         <!-- Start of #subsection-text-input -->
-        <fieldset id="subsection-text-input" role="region" aria-labelledby="subtitle-text-input">
+        <fieldset id="subsection-text-input">
             <legend>
                 <h3 id="subtitle-text-input">Text Input</h3>
             </legend>
@@ -163,7 +163,7 @@
         <!-- End of #subsection-text-input -->
 
         <!-- Start of #subsection-non-text-input -->
-        <fieldset id="subsection-non-text-input" role="region" aria-labelledby="subtitle-non-text-input">
+        <fieldset id="subsection-non-text-input">
             <legend>
                 <h3 id="subtitle-non-text-input">Non-text Input</h3>
             </legend>
@@ -192,7 +192,7 @@
                     type="range" />
             </label>
 
-            <h4>Notes:</h4>
+            <h4 id="notes-non-text-input">Notes:</h4>
             <p>
                 <small>Some pointers on <a rel="external noopener" href="https://css-tricks.com/sliding-nightmare-understanding-range-input/">styling the range input</a>.</small>
             </p>
@@ -200,7 +200,7 @@
         <!-- End of #subsection-non-text-input -->
 
         <!-- Start of #subsection-select -->
-        <fieldset id="subsection-select" role="region" aria-labelledby="subtitle-select">
+        <fieldset id="subsection-select">
             <legend>
                 <h3 id="subtitle-select">Select</h3>
             </legend>
@@ -255,7 +255,7 @@
         <!-- End of #subsection-select -->
 
         <!-- Start of #subsection-checkboxes-and-radios -->
-        <fieldset id="subsection-checkboxes-and-radios" role="region" aria-labelledby="subtitle-checkboxes-and-radio-buttons">
+        <fieldset id="subsection-checkboxes-and-radios">
             <legend>
                 <h3 id="subtitle-checkboxes-and-radio-buttons">Checkboxes and Radio Buttons</h3>
             </legend>
@@ -379,7 +379,7 @@
         <!-- End of #subsection-checkboxes-and-radios -->
 
         <!-- Start of #subsection-buttons -->
-        <fieldset id="subsection-button-states" role="region" aria-labelledby="subtitle-button-states">
+        <fieldset id="subsection-button-states">
             <legend>
                 <h3 id="subtitle-button-states">Buttons</h3>
             </legend>
@@ -428,7 +428,7 @@
                 Text Button
             </span>
 
-            <h4>Notes:</h4>
+            <h4 id="notes-buttons">Notes:</h4>
             <ul>
                 <li>
                     <small>Add <code translate="no">type="button"</code> to <code translate="no">&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
@@ -447,7 +447,7 @@
         <!-- End of #subsection-buttons -->
 
         <!-- Start of #subsection-output -->
-        <fieldset id="subsection-output" role="region" aria-labelledby="subtitle-output">
+        <fieldset id="subsection-output">
             <legend>
                 <h3 id="subtitle-output">Output</h3>
             </legend>
@@ -473,7 +473,7 @@
         <!-- End of #subsection-output -->
 
         <!-- Start of #subsection-lockup -->
-        <fieldset id="subsection-lockup" role="region" aria-labelledby="subtitle-lockup">
+        <fieldset id="subsection-lockup">
             <legend>
                 <h3 id="subtitle-lockup">Lockup</h3>
             </legend>
@@ -496,7 +496,7 @@
                 I agree
             </label>
 
-            <h4>Notes:</h4>
+            <h4 id="notes-lockup">Notes:</h4>
             <p>
                 <small>Place messaging above the input field so as to not be lost when magnification or focus on mobile occurs.</small>
             </p>
@@ -504,7 +504,7 @@
         <!-- End of #subsection-lockup -->
 
         <!-- Start of #subsection-states-and-validation -->
-        <fieldset id="subsection-states-and-validation" role="region" aria-labelledby="subtitle-states-and-validation">
+        <fieldset id="subsection-states-and-validation">
             <legend>
                 <h3 id="subtitle-states-and-validation">States and Validation</h3>
             </legend>
@@ -630,7 +630,7 @@
                     Loading
                 </button>
 
-                <h5>Notes:</h5>
+                <h5 id="notes-button-states-and-validation">Notes:</h5>
                 <p>
                     <small>Use <code translate="no">:hover</code>, <code translate="no">:focus</code>, and <code translate="no">:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
                 </p>
@@ -640,7 +640,7 @@
         <!-- End of #subsection-states-and-validation -->
 
         <!-- Start of #subsection-autocomplete -->
-        <fieldset role="region" aria-labelledby="subtitle-autocomplete" id="subsection-autocomplete">
+        <fieldset id="subsection-autocomplete">
             <legend>
                 <h3 id="subtitle-autocomplete">Autocomplete</h3>
             </legend>
@@ -787,7 +787,7 @@
                 <input
                     id="input-autocomplete-street-address"
                     name="autocomplete-street-address"
-                    autocomplete="street-address"
+                    autocomplete="shipping street-address"
                     autocorrect="off"
                     type="text" />
             </label>
@@ -836,7 +836,7 @@
                     novalidate
                     id="input-autocomplete-postal-code"
                     name="autocomplete-postal-code"
-                    autocomplete="postal-code"
+                    autocomplete="shipping postal-code"
                     autocorrect="off"
                     type="number" />
             </label>
@@ -1053,11 +1053,10 @@
                     type="file" />
             </label>
 
-            <h4>Notes:</h4>
+            <h4 id="notes-autocomplete">Notes:</h4>
             <p>
                 <small>Be sure to reference the <a rel="external noopener" href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers Believe</cite></a> collection for creating bulletproof inputs.</small>
             </p>
-
         </fieldset>
         <!-- End of #subsection-autocomplete -->
     </form>

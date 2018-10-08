@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-<title>Accessible HTML Content Patterns</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-
+  <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Accessible HTML Content Patterns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
-
 <body>
-
-<h1>Accessible HTML Content Patterns</h1>
-
 {{> section.project-link}}
-
-<main tabindex="-1">
 
 {{> section.table-of-contents}}
 
@@ -26,6 +16,9 @@
 {{> section.about}}
 
 <hr />
+
+<!-- Start of #main -->
+<main id="main" tabindex="-1">
 
 {{> section.headings}}
 
@@ -49,10 +42,12 @@
 
 {{> section.forms}}
 
+</main>
+<!-- End of #main -->
+
 <hr />
 
 {{> section.footer}}
 
-</main>
 </body>
 </html>
