@@ -11,7 +11,7 @@ root = true
 
 # Tab style
 indent_style = space
-indent_size = 4
+indent_size = 2
 
 # File format and handling
 charset = utf-8
