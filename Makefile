@@ -6,8 +6,5 @@ build:
 	bin/handlebars-build > docs/index.html
 	@make clean
 
-watch:
-	onchange 'partials/**/*.hbs' -- make build
-
 clean:
 	rm docs/*.js || exit 0;
