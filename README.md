@@ -19,6 +19,7 @@ There are a few of ways to work with this repo:
 `curl -o accessible-html-content-patterns.html https://raw.githubusercontent.com/ericwbailey/accessible-html-content-patterns/master/docs/index.html`
 - Copy/paste individual elements from the [source code](https://github.com/ericwbailey/accessible-html-content-patterns/blob/master/docs/index.html)
 
+To review any changes you make locally, run `make build` from the command line. This will stitch the handlebar templates together to update [`docs/index.html`](https://github.com/ericwbailey/accessible-html-content-patterns/blob/master/docs/index.html).
 
 ## Code Concerns
 
