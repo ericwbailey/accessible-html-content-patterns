@@ -30,7 +30,7 @@ Are suggestions only, or used for internal navigation/reference. Don't feel you 
 Tabs, indentation, comments, etc. are my personal preference. It's more important to be consistent than literal when using for your own project. Use [EditorConfig](http://editorconfig.org/) to help make this easier.
 
 ### Accessibility Testing
-This page has been tested via the Chrome DevTools [Accessibility Audit](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en), as well as  [WebAIM's WAVE](http://wave.webaim.org/extension/) and [Deque System's aXe](http://www.deque.com/products/axe/#aXeExtensions) accessibility testing browser extensions, as well as [Khan Academy's tota11y bookmarklet](http://khan.github.io/tota11y/). 
+This page has been tested via the Chrome DevTools [Accessibility Audit](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en), as well as  [WebAIM's WAVE](http://wave.webaim.org/extension/) and [Deque System's aXe](http://www.deque.com/products/axe/#aXeExtensions) accessibility testing browser extensions, as well as [Khan Academy's tota11y bookmarklet](http://khan.github.io/tota11y/).
 
 Answers to specific warnings issues are available on the [repo's Wiki](https://github.com/ericwbailey/accessible-html-content-patterns/wiki).
 
@@ -45,7 +45,7 @@ Contributions are welcome!
 
 
 ## Credits, Attribution, and Inspiration
-- [WebAIM](http://webaim.org/): 
+- [WebAIM](http://webaim.org/):
 [Three things you should know before using VoiceOver for testing](http://webaim.org/blog/three-things-voiceover/)
 - [Adam Morse](http://mrmrs.cc/)'s [mrmrs/html](https://github.com/mrmrs/html)
 - [HTML5 Doctor](http://html5doctor.com/)
@@ -61,6 +61,8 @@ Contributions are welcome!
 - [Nathan Curtis](https://twitter.com/nathanacurtis)' [Buttons in Design Systems](https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw)
 - [Filament Group](https://www.filamentgroup.com/): [I Wanted to Type a Number](https://www.filamentgroup.com/lab/type-number.html)
 - [CSS-Tricks](https://css-tricks.com/)' [Finger-friendly numerical inputs with inputmode](https://css-tricks.com/finger-friendly-numerical-inputs-with-inputmode/)
+- [CSS-Tricks](https://css-tricks.com/)' [Everything You Ever Wanted to Know About inputmode](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/)
+- [Cloud Four]'s [Autofill: What web devs should know, but don’t](https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/)
 
 
 ## License
