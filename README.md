@@ -62,7 +62,7 @@ Contributions are welcome!
 - [Filament Group](https://www.filamentgroup.com/): [I Wanted to Type a Number](https://www.filamentgroup.com/lab/type-number.html)
 - [CSS-Tricks](https://css-tricks.com/)' [Finger-friendly numerical inputs with inputmode](https://css-tricks.com/finger-friendly-numerical-inputs-with-inputmode/)
 - [CSS-Tricks](https://css-tricks.com/)' [Everything You Ever Wanted to Know About inputmode](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/)
-- [Cloud Four]'s [Autofill: What web devs should know, but don’t](https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/)
+- [Cloud Four](https://cloudfour.com/)'s [Autofill: What web devs should know, but don’t](https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/)
 
 
 ## License
