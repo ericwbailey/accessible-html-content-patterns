@@ -786,8 +786,9 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         Number
         <input
           id="input-number"
-          name="number"
-          type="number" />
+          type="text"
+          inputmode="numeric"
+          pattern="[0-9]*" />
       </label>
 
       <label>
@@ -874,9 +875,14 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
       </label>
 
       <h4 id="notes-text-input">Notes:</h4>
-      <p>
-        <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
-      </p>
+      <ul>
+        <li>
+          <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
+        </li>
+        <li>
+          <small><code>&lt;input type="number"&gt;</code> has <a rel="external noopener" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous issues with Dragon Naturally Speaking and NVDA</a>.</small>
+        </li>
+      </ul>
     </fieldset>
     <!-- End of #subsection-text-input -->
 
