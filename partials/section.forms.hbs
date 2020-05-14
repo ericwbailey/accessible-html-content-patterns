@@ -20,14 +20,12 @@
 
       <label>
         Email
-        <input id="input-email" name="email" placeholder="name@example.com" autocapitalize="off" autocorrect="off"
-          spellcheck="false" type="email" />
+        <input id="input-email" name="email" placeholder="name@example.com" autocapitalize="off" autocorrect="off" spellcheck="false" type="email" />
       </label>
 
       <label>
         Password
-        <input id="input-password" name="password" autocapitalize="off" autocorrect="off" spellcheck="false"
-          type="password" />
+        <input id="input-password" name="password" autocapitalize="off" autocorrect="off" spellcheck="false" type="password" />
       </label>
 
       <label>
@@ -106,15 +104,10 @@
       <h4 id="notes-text-input">Notes:</h4>
       <ul>
         <li>
-          <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with
-            a type of <code translate="no">password</code> to <a rel="external noopener"
-              href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure
-              passwords</a>.</small>
+          <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
         </li>
         <li>
-          <small><code>&lt;input type="number"&gt;</code> has <a rel="external noopener"
-              href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous
-              issues with Dragon Naturally Speaking and NVDA</a>.</small>
+          <small><code>&lt;input type="number"&gt;</code> has <a rel="external noopener" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous issues with Dragon Naturally Speaking and NVDA</a>.</small>
         </li>
       </ul>
     </fieldset>
@@ -144,8 +137,7 @@
       <h4 id="notes-non-text-input">Notes:</h4>
       <p>
         <small>Some pointers on <a rel="external noopener"
-            href="https://css-tricks.com/sliding-nightmare-understanding-range-input/">styling the range
-            input</a>.</small>
+            href="https://css-tricks.com/sliding-nightmare-understanding-range-input/">styling the range input</a>.</small>
       </p>
     </fieldset>
     <!-- End of #subsection-non-text-input -->
@@ -328,31 +320,19 @@
       <h4 id="notes-buttons">Notes:</h4>
       <ul>
         <li>
-          <small>Add <code translate="no">type="button"</code> to <code translate="no">&lt;button&gt;</code> elements
-            placed outside of forms to prevent some browsers from attempting to submit form data.</small>
+          <small>Add <code translate="no">type="button"</code> to <code translate="no">&lt;button&gt;</code> elements placed outside of forms to prevent some browsers from attempting to submit form data.</small>
         </li>
         <li>
-          <small>Add <code translate="no">pointer-events: none;</code> to <a rel="external noopener"
-              href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in
-              buttons</a>.</small>
+          <small>Add <code translate="no">pointer-events: none;</code> to <a rel="external noopener" href="https://twitter.com/stowball/status/857707052545613824">inline SVG icons placed in buttons</a>.</small>
         </li>
         <li>
-          <small>Add <code translate="no">focusable="false"</code> to SVG inside of a focusable element (links, buttons,
-            etc.) to prevent <a rel="external noopener"
-              href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet
-              Explorer</a>.</small>
+          <small>Add <code translate="no">focusable="false"</code> to SVG inside of a focusable element (links, buttons, etc.) to prevent <a rel="external noopener" href="https://simplyaccessible.com/article/7-solutions-svgs#acc-heading-4">a bug with Internet Explorer</a>.</small>
         </li>
         <li>
-          <small>Use <code translate="no">tabindex="0"</code> in conjunction with <code
-              translate="no">role="button"</code> to ensure that the text button is focusable. Use <code
-              translate="no">cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about
-            <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button
-                Element</cite></a>.</small>
+          <small>Use <code translate="no">tabindex="0"</code> in conjunction with <code translate="no">role="button"</code> to ensure that the text button is focusable. Use <code translate="no">cursor: pointer;</code> in the CSS to communicate that it is interactable. Learn more about <a rel="external noopener" href="https://css-tricks.com/use-button-element/"><cite>When To Use The Button Element</cite></a>.</small>
         </li>
         <li>
-          <small>Use <code
-              translate="no"><a href="https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute">enterkeyhint</a></code>
-            to manipulate the enter key on a virtual keyboard.</small>
+          <small>Use <code translate="no"><a href="https://html.spec.whatwg.org/multipage/interaction.html#input-modalities:-the-enterkeyhint-attribute">enterkeyhint</a></code> to manipulate the enter key on a virtual keyboard.</small>
         </li>
       </ul>
     </fieldset>
@@ -396,8 +376,7 @@
 
       <h4 id="notes-lockup">Notes:</h4>
       <p>
-        <small>Place messaging above the input field so as to not be lost when magnification or focus on mobile
-          occurs.</small>
+        <small>Place messaging above the input field so as to not be lost when magnification or focus on mobile occurs.</small>
       </p>
     </fieldset>
     <!-- End of #subsection-lockup -->
@@ -481,12 +460,7 @@
 
         <h5 id="notes-button-states-and-validation">Notes:</h5>
         <p>
-          <small>Use <code translate="no">:hover</code>, <code translate="no">:focus</code>, and <code
-              translate="no">:active</code> selectors to control the other button states. Learn more about <a
-              rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a>
-            and using <a rel="external noopener"
-              href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons
-                in Design Systems</cite></a>.</small>
+          <small>Use <code translate="no">:hover</code>, <code translate="no">:focus</code>, and <code translate="no">:active</code> selectors to control the other button states. Learn more about <a rel="external noopener" href="https://css-tricks.com/user-facing-state/">semantically managing state</a> and using <a rel="external noopener" href="https://medium.com/eightshapes-llc/buttons-in-design-systems-eac3acf7e23#.b1p96hsrw"><cite>Buttons in Design Systems</cite></a>.</small>
         </p>
       </div>
       <!-- End of #subsection-button-states -->
@@ -512,32 +486,27 @@
 
       <label>
         Honorific Prefix (Mr., Ms., Dr., etc.)
-        <input id="input-autocomplete-honorific-prefix" name="autocomplete-honorific-prefix"
-          autocomplete="honorific-prefix" autocapitalize="on" type="text" />
+        <input id="input-autocomplete-honorific-prefix" name="autocomplete-honorific-prefix" autocomplete="honorific-prefix" autocapitalize="on" type="text" />
       </label>
 
       <label>
         Additional Name
-        <input id="input-autocomplete-additional-name" name="autocomplete-additional-name"
-          autocomplete="additional-name" autocorrect="off" type="text" />
+        <input id="input-autocomplete-additional-name" name="autocomplete-additional-name" autocomplete="additional-name" autocorrect="off" type="text" />
       </label>
 
       <label>
         Family Name
-        <input id="input-autocomplete-family-name" name="autocomplete-family-name" autocomplete="family-name"
-          autocorrect="off" type="text" />
+        <input id="input-autocomplete-family-name" name="autocomplete-family-name" autocomplete="family-name" autocorrect="off" type="text" />
       </label>
 
       <label>
         Honorific Suffix (Jr., II, etc.)
-        <input id="input-autocomplete-honorific-suffix" name="autocomplete-honorific-suffix"
-          autocomplete="honorific-suffix" autocapitalize="on" type="text" />
+        <input id="input-autocomplete-honorific-suffix" name="autocomplete-honorific-suffix" autocomplete="honorific-suffix" autocapitalize="on" type="text" />
       </label>
 
       <label>
         Nickname
-        <input id="input-autocomplete-nickname" name="autocomplete-nickname" autocomplete="nickname" autocorrect="off"
-          type="text" />
+        <input id="input-autocomplete-nickname" name="autocomplete-nickname" autocomplete="nickname" autocorrect="off" type="text" />
       </label>
 
       <label>
@@ -601,116 +570,97 @@
 
       <label>
         Country Name
-        <input id="input-autocomplete-country-name" name="autocomplete-country-name" autocomplete="country-name"
-          type="text" />
+        <input id="input-autocomplete-country-name" name="autocomplete-country-name" autocomplete="country-name" type="text" />
       </label>
 
       <label>
         Postal Code
-        <input novalidate id="input-autocomplete-postal-code" name="autocomplete-postal-code"
-          autocomplete="shipping postal-code" autocorrect="off" type="number" />
+        <input novalidate id="input-autocomplete-postal-code" name="autocomplete-postal-code" autocomplete="shipping postal-code" autocorrect="off" type="number" />
       </label>
 
       <label>
         CC Name (Full name as given on the payment instrument)
-        <input id="input-autocomplete-cc-name" name="autocomplete-cc-name" autocomplete="cc-name" autocorrect="off"
-          type="text" />
+        <input id="input-autocomplete-cc-name" name="autocomplete-cc-name" autocomplete="cc-name" autocorrect="off" type="text" />
       </label>
 
       <label>
         CC Given Name
-        <input id="input-autocomplete-cc-given-name" name="autocomplete-cc-given-name" autocomplete="cc-given-name"
-          autocorrect="off" type="text" />
+        <input id="input-autocomplete-cc-given-name" name="autocomplete-cc-given-name" autocomplete="cc-given-name" autocorrect="off" type="text" />
       </label>
 
       <label>
         CC Additional Name
-        <input id="input-autocomplete-cc-additional-name" name="autocomplete-cc-additional-name"
-          autocomplete="cc-additional-name" autocorrect="off" type="text" />
+        <input id="input-autocomplete-cc-additional-name" name="autocomplete-cc-additional-name" autocomplete="cc-additional-name" autocorrect="off" type="text" />
       </label>
 
       <label>
         CC Family Name
-        <input id="input-autocomplete-cc-family-name" name="autocomplete-cc-family-name" autocomplete="cc-family-name"
-          autocorrect="off" type="text" />
+        <input id="input-autocomplete-cc-family-name" name="autocomplete-cc-family-name" autocomplete="cc-family-name" autocorrect="off" type="text" />
       </label>
 
       <label>
         CC Number
-        <input novalidate id="input-autocomplete-cc-number" name="autocomplete-cc-number" pattern="\d*"
-          autocomplete="cc-number" autocorrect="off" type="tel" />
+        <input novalidate id="input-autocomplete-cc-number" name="autocomplete-cc-number" pattern="\d*" autocomplete="cc-number" autocorrect="off" type="tel" />
       </label>
 
       <label>
         CC Exp
-        <input novalidate id="input-autocomplete-cc-exp" name="autocomplete-cc-exp" pattern="\d*" autocomplete="cc-exp"
-          autocorrect="off" type="tel" />
+        <input novalidate id="input-autocomplete-cc-exp" name="autocomplete-cc-exp" pattern="\d*" autocomplete="cc-exp" autocorrect="off" type="tel" />
       </label>
 
       <label>
         CC Exp Month
-        <input novalidate id="input-autocomplete-cc-exp-month" name="autocomplete-cc-exp-month" pattern="\d*"
-          autocomplete="cc-exp-month" autocorrect="off" type="tel" />
+        <input novalidate id="input-autocomplete-cc-exp-month" name="autocomplete-cc-exp-month" pattern="\d*" autocomplete="cc-exp-month" autocorrect="off" type="tel" />
       </label>
 
       <label>
         CC Exp Year
-        <input novalidate id="input-autocomplete-cc-exp-year" name="autocomplete-cc-exp-year" pattern="\d*"
-          autocomplete="cc-exp-year" autocorrect="off" type="tel" />
+        <input novalidate id="input-autocomplete-cc-exp-year" name="autocomplete-cc-exp-year" pattern="\d*" autocomplete="cc-exp-year" autocorrect="off" type="tel" />
       </label>
 
       <label>
         CC CSC (Security code)
-        <input novalidate id="input-autocomplete-cc-csc" name="autocomplete-cc-csc" pattern="\d*" autocomplete="cc-csc"
-          autocorrect="off" type="tel" />
+        <input novalidate id="input-autocomplete-cc-csc" name="autocomplete-cc-csc" pattern="\d*" autocomplete="cc-csc" autocorrect="off" type="tel" />
       </label>
 
       <label>
         CC Type (Visa, American Express, etc.)
-        <input id="input-autocomplete-cc-type" name="autocomplete-cc-type" autocomplete="cc-type" autocapitalize="on"
-          type="text" />
+        <input id="input-autocomplete-cc-type" name="autocomplete-cc-type" autocomplete="cc-type" autocapitalize="on" type="text" />
       </label>
 
       <label>
         Transaction Currency
-        <input id="input-autocomplete-transaction-currency" name="autocomplete-transaction-currency"
-          autocomplete="transaction-currency" autocapitalize="on" type="text" />
+        <input id="input-autocomplete-transaction-currency" name="autocomplete-transaction-currency" autocomplete="transaction-currency" autocapitalize="on" type="text" />
       </label>
 
       <label>
         Transaction Amount
-        <input id="input-autocomplete-transaction-amount" name="autocomplete-transaction-amount" pattern="\d*"
-          autocomplete="transaction-amount" type="number" />
+        <input id="input-autocomplete-transaction-amount" name="autocomplete-transaction-amount" pattern="\d*" autocomplete="transaction-amount" type="number" />
       </label>
 
       <label>
         Language (Valid BCP 47 language tag)
-        <input id="input-autocomplete-language" name="autocomplete-language" autocomplete="language" autocapitalize="on"
-          autocorrect="off" type="text" />
+        <input id="input-autocomplete-language" name="autocomplete-language" autocomplete="language" autocapitalize="on" autocorrect="off" type="text" />
       </label>
 
       <label>
         Bday
-        <input id="input-autocomplete-bday" name="autocomplete-bday" autocomplete="bday" autocapitalize="on"
-          type="text" />
+        <input id="input-autocomplete-bday" name="autocomplete-bday" autocomplete="bday" autocapitalize="on" type="text" />
       </label>
 
       <label>
         Bday-day
-        <input id="input-autocomplete-bday-day" name="autocomplete-bday-day" pattern="\d*" autocomplete="bday-day"
-          type="tel" />
+        <input id="input-autocomplete-bday-day" name="autocomplete-bday-day" pattern="\d*" autocomplete="bday-day" type="tel" />
       </label>
 
       <label>
         Bday-month
-        <input id="input-autocomplete-bday-month" name="autocomplete-bday-month" pattern="\d*" autocomplete="bday-month"
-          type="tel" />
+        <input id="input-autocomplete-bday-month" name="autocomplete-bday-month" pattern="\d*" autocomplete="bday-month" type="tel" />
       </label>
 
       <label>
         Bday-year
-        <input id="input-autocomplete-bday-year" name="autocomplete-bday-year" pattern="\d*" autocomplete="bday-year"
-          type="tel" />
+        <input id="input-autocomplete-bday-year" name="autocomplete-bday-year" pattern="\d*" autocomplete="bday-year" type="tel" />
       </label>
 
       <label>
@@ -720,8 +670,12 @@
 
       <label>
         Autocomplete URL
-        <input id="input-autocomplete-url" name="autocomplete-url" autocomplete="url" autocapitalize="off"
-          autocorrect="off" spellcheck="false" type="url" />
+        <input id="input-autocomplete-url" name="autocomplete-url" autocomplete="url" autocapitalize="off" autocorrect="off" spellcheck="false" type="url" />
+      </label>
+
+      <label>
+        One-time Code
+        <input id="input-one-time-code" name="one-time-code" autocomplete="one-time-code" autocapitalize="off" autocorrect="off" spellcheck="false" type="number" />
       </label>
 
       <label>
@@ -731,9 +685,7 @@
 
       <h4 id="notes-autocomplete">Notes:</h4>
       <p>
-        <small>Be sure to reference the <a rel="external noopener"
-            href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers
-              Believe</cite></a> collection for creating bulletproof inputs.</small>
+        <small>Be sure to reference the <a rel="external noopener" href="http://spaceninja.com/2015/12/08/falsehoods-programmers-believe/"><cite>Falsehoods Programmers Believe</cite></a> collection for creating bulletproof inputs.</small>
       </p>
     </fieldset>
     <!-- End of #subsection-autocomplete -->
