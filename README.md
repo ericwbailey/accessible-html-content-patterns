@@ -63,6 +63,7 @@ Contributions are welcome!
 - [CSS-Tricks](https://css-tricks.com/)' [Finger-friendly numerical inputs with inputmode](https://css-tricks.com/finger-friendly-numerical-inputs-with-inputmode/)
 - [CSS-Tricks](https://css-tricks.com/)' [Everything You Ever Wanted to Know About inputmode](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/)
 - [Cloud Four](https://cloudfour.com/)'s [Autofill: What web devs should know, but don’t](https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/)
+- [Alex Holachek](https://github.com/aholachek)'s [Build a Better Mobile Input](https://better-mobile-inputs.netlify.app/)
 
 
 ## License
