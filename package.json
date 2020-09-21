@@ -2,7 +2,7 @@
   "name": "accessible-html-content-patterns",
   "description": "A collection of the full HTML5 Doctor Element Index as well as common markup patterns for quick reference.",
   "homepage": "https://github.com/ericwbailey/accessible-html-content-patterns",
-  "version": "1.0.14",
+  "version": "2.0.0",
   "license": "MIT",
   "author": "Eric Bailey <eric.w.bailey@gmail.com> (http://ericwbailey.design/)",
   "contributors": "Scott Doxey <hello@scottdoxey.com> (https://www.scottdoxey.com/)",
