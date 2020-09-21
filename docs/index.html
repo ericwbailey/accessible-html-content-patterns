@@ -731,101 +731,72 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         <h3 id="subtitle-text-input">Text Input</h3>
       </legend>
 
-      <label>
-        Text
-        <input id="input-text" name="text" type="text" />
-      </label>
+      <label for="input-text">Text</label>
+      <input id="input-text" name="text" type="text" />
 
-      <label>
-        Text with Placeholder
-        <input id="input-text-with-placeholder" name="placeholder" placeholder="Placeholder" type="text" />
-      </label>
+      <label for="input-text-with-placeholder">Text with Placeholder</label>
+      <input id="input-text-with-placeholder" name="placeholder" placeholder="Placeholder" type="text" />
 
-      <label>
-        Email
-        <input id="input-email" name="email" placeholder="name@example.com" autocapitalize="off" autocorrect="off" spellcheck="false" type="email" />
-      </label>
+      <label for="input-email">Email</label>
+      <input id="input-email" name="email" placeholder="name@example.com" autocapitalize="off" autocorrect="off" spellcheck="false" type="email" />
 
-      <label>
-        Password
-        <input id="input-password" name="password" autocapitalize="off" autocorrect="off" spellcheck="false" type="password" />
-      </label>
+      <label for="input-password">Password</label>
+      <input id="input-password" name="password" autocapitalize="off" autocorrect="off" spellcheck="false" type="password" />
 
-      <label>
-        URL
-        <input id="input-url" name="url" autocapitalize="off" spellcheck="false" type="url" />
-      </label>
+      <label for="input-url">URL</label>
+      <input id="input-url" name="url" autocapitalize="off" spellcheck="false" type="url" />
 
-      <label>
-        Telephone
-        <input id="input-telephone" name="telephone" autocorrect="off" autocomplete="tel" spellcheck="false"
-          type="tel" />
-      </label>
+      <label for="input-telephone">Telephone</label>
+      <input id="input-telephone" name="telephone" autocorrect="off" autocomplete="tel" spellcheck="false" type="tel" />
 
-      <label>
-        Number
-        <input id="input-number" type="text" inputmode="numeric" pattern="[0-9]*" />
-      </label>
+      <label for="input-number" >Number</label>
+      <input id="input-number" type="text" inputmode="numeric" pattern="[0-9]*" />
 
-      <label>
-        Search
-        <input id="input-search" name="search" spellcheck="false" type="search" />
-      </label>
+      <label for="input-search">Search</label>
+      <input id="input-search" name="search" spellcheck="false" type="search" />
 
-      <label>
-        Date
-        <input id="input-date" name="date" type="date" />
-      </label>
+      <label for="input-date">Date</label>
+      <input id="input-date" name="date" type="date" />
 
-      <label>
-        Datetime-local
-        <input id="input-datetime-local" name="datetime-local" type="datetime-local" />
-      </label>
+      <label for="input-datetime-local">Datetime-local</label>
+      <input id="input-datetime-local" name="datetime-local" type="datetime-local" />
 
-      <label>
-        Month
-        <input id="input-month" name="month" type="month" />
-      </label>
+      <label for="input-month">Month</label>
+      <input id="input-month" name="month" type="month" />
 
-      <label>
-        Time
-        <input id="input-time" name="time" type="time" />
-      </label>
+      <label for="input-time">Time</label>
+      <input id="input-time" name="time" type="time" />
 
-      <label>
-        Week
-        <input id="input-week" name="week" type="week" />
-      </label>
+      <label for="input-week">Week</label>
+      <input id="input-week" name="week" type="week" />
 
-      <label>
-        Datalist
-        <input list="dog-breeds" id="input-datalist" name="datalist" type="text">
-        <datalist id="dog-breeds">
-          <option value="Beagles"></option>
-          <option value="Boxers"></option>
-          <option value="Bulldogs"></option>
-          <option value="Dachshunds"></option>
-          <option value="French Bulldogs"></option>
-          <option value="German Shepherds"></option>
-          <option value="German Shorthaired Pointers"></option>
-          <option value="Golden Retrievers"></option>
-          <option value="Labrador Retrievers"></option>
-          <option value="Poodles"></option>
-          <option value="Rottweilers"></option>
-          <option value="Siberian Huskies"></option>
-          <option value="Yorkshire Terriers"></option>
-        </datalist>
-        </input>
-      </label>
+      <label for="input-datalist">Datalist</label>
+      <input list="dog-breeds" id="input-datalist" name="datalist" type="text">
+      <datalist id="dog-breeds">
+        <option value="Beagles"></option>
+        <option value="Boxers"></option>
+        <option value="Bulldogs"></option>
+        <option value="Dachshunds"></option>
+        <option value="French Bulldogs"></option>
+        <option value="German Shepherds"></option>
+        <option value="German Shorthaired Pointers"></option>
+        <option value="Golden Retrievers"></option>
+        <option value="Labrador Retrievers"></option>
+        <option value="Poodles"></option>
+        <option value="Rottweilers"></option>
+        <option value="Siberian Huskies"></option>
+        <option value="Yorkshire Terriers"></option>
+      </datalist>
+      </input>
 
-      <label>
-        Textarea
-        <textarea id="input-textarea" name="textarea" dir="auto">
-        </textarea>
-      </label>
+      <label for="input-textarea">Textarea</label>
+      <textarea id="input-textarea" name="textarea" dir="auto"></textarea>
 
       <h4 id="notes-text-input">Notes:</h4>
       <ul>
+        <li>
+          <small>Avoid nesting <code translate="no">input</code> elements inside of <code translate="no">label</code> elements for better support for <a rel="external noopener" href="https://www.nuance.com/dragon.html">Dragon Speech Recognition</a>.</small>
+        </li>
         <li>
           <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
         </li>
@@ -842,20 +813,14 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         <h3 id="subtitle-non-text-input">Non-text Input</h3>
       </legend>
 
-      <label>
-        Color
-        <input id="input-color" name="color" type="color" />
-      </label>
+      <label for="input-color">Color</label>
+      <input id="input-color" name="color" type="color" />
 
-      <label>
-        File Input
-        <input id="input-file" name="file" type="file" />
-      </label>
+      <label for="input-file">File Input</label>
+      <input id="input-file" name="file" type="file" />
 
-      <label>
-        Range Input
-        <input id="input-range" name="range" type="range" />
-      </label>
+      <label for="input-range">Range Input</label>
+      <input id="input-range" name="range" type="range" />
 
       <h4 id="notes-non-text-input">Notes:</h4>
       <p>
@@ -871,45 +836,39 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         <h3 id="subtitle-select">Select</h3>
       </legend>
 
-      <label>
-        Select
-        <select id="input-select" name="select">
-          <option value="corgis">Corgis</option>
-          <option value="dachshunds">Dachshunds</option>
-          <option value="shiba-inus">Shiba Inus</option>
-        </select>
-      </label>
+      <label for="input-select" >Select</label>
+      <select id="input-select" name="select">
+        <option value="corgis">Corgis</option>
+        <option value="dachshunds">Dachshunds</option>
+        <option value="shiba-inus">Shiba Inus</option>
+      </select>
 
-      <label>
-        Select with Optgroup
-        <select id="input-select-with-optgroup" name="select-with-optgroup">
-          <optgroup label="Dog Breeds">
-            <option value="affenpinscher">Affenpinscher</option>
-            <option value="afghan-hound">Afghan Hound</option>
-            <option value="afghan-shepherd">Afghan Shepherd</option>
-            <option value="aidi">Aidi</option>
-          </optgroup>
-          <optgroup label="Cat Breeds">
-            <option value="abyssinian">Abyssinian</option>
-            <option value="aegean">Aegean</option>
-            <option value="american-curl">American Curl</option>
-            <option value="american-bobtail">American Bobtail</option>
-          </optgroup>
-        </select>
-      </label>
+      <label for="input-select-with-optgroup">Select with Optgroup</label>
+      <select id="input-select-with-optgroup" name="select-with-optgroup">
+        <optgroup label="Dog Breeds">
+          <option value="affenpinscher">Affenpinscher</option>
+          <option value="afghan-hound">Afghan Hound</option>
+          <option value="afghan-shepherd">Afghan Shepherd</option>
+          <option value="aidi">Aidi</option>
+        </optgroup>
+        <optgroup label="Cat Breeds">
+          <option value="abyssinian">Abyssinian</option>
+          <option value="aegean">Aegean</option>
+          <option value="american-curl">American Curl</option>
+          <option value="american-bobtail">American Bobtail</option>
+        </optgroup>
+      </select>
 
-      <label>
-        Multiple Select
-        <select multiple id="input-multiple-select" name="multiple-select">
-          <option value="beagle">Beagle</option>
-          <option value="bernese-mountain-dog">Bernese Mountain Dog</option>
-          <option value="kuvasz">Kuvasz</option>
-          <option value="newfoundland">Newfoundland</option>
-          <option value="old-english-sheepdog">Old English Sheepdog</option>
-          <option value="rottweiler">Rottweiler</option>
-          <option value="schnauzer">Schnauzer</option>
-        </select>
-      </label>
+      <label for="input-multiple-select">Multiple Select</label>
+      <select multiple id="input-multiple-select" name="multiple-select">
+        <option value="beagle">Beagle</option>
+        <option value="bernese-mountain-dog">Bernese Mountain Dog</option>
+        <option value="kuvasz">Kuvasz</option>
+        <option value="newfoundland">Newfoundland</option>
+        <option value="old-english-sheepdog">Old English Sheepdog</option>
+        <option value="rottweiler">Rottweiler</option>
+        <option value="schnauzer">Schnauzer</option>
+      </select>
 
       <h4 id="notes-select">Notes:</h4>
       <p>
@@ -925,78 +884,53 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         <h3 id="subtitle-checkboxes-and-radio-buttons">Checkboxes and Radio Buttons</h3>
       </legend>
 
-      <label>
+      <label for="input-checkbox">Checkbox</label>
         <input id="input-checkbox" name="checkbox" type="checkbox" />
-        Checkbox
-      </label>
 
-      <label>
-        <input checked id="input-checked-checkbox" name="checked-checkbox" type="checkbox" />
-        Checked Checkbox
-      </label>
+      <label for="input-checked-checkbox">Checked Checkbox</label>
+      <input checked id="input-checked-checkbox" name="checked-checkbox" type="checkbox" />
 
-      <label>
-        <input indeterminate id="input-indeterminate-checkbox" name="indeterminate-checkbox" type="checkbox" />
-        Indeterminate Checkbox
-      </label>
+      <label for="input-indeterminate-checkbox" >Indeterminate Checkbox</label>
+      <input indeterminate id="input-indeterminate-checkbox" name="indeterminate-checkbox" type="checkbox" />
 
       <fieldset>
         <legend>Pizza Toppings</legend>
 
-        <label>
-          <input id="ham" name="toppings" type="checkbox" />
-          Ham
-        </label>
+        <label for="ham">Ham</label>
+        <input id="ham" name="toppings" type="checkbox" />
 
-        <label>
-          <input id="pepperoni" name="toppings" type="checkbox" />
-          Pepperoni
-        </label>
+        <label for="pepperoni">Pepperoni</label>
+        <input id="pepperoni" name="toppings" type="checkbox" />
 
-        <label>
-          <input id="mushrooms" name="toppings" type="checkbox" />
-          Mushrooms
-        </label>
+        <label for="mushrooms">Mushrooms</label>
+        <input id="mushrooms" name="toppings" type="checkbox" />
 
-        <label>
-          <input id="olives" name="toppings" type="checkbox" />
-          Olives
-        </label>
+        <label for="olives">Olives</label>
+        <input id="olives" name="toppings" type="checkbox" />
 
       </fieldset>
 
-      <label>
-        <input id="input-radio" name="radio" type="radio" />
-        Radio Button
-      </label>
+      <label for="input-radio">Radio Button</label>
+      <input id="input-radio" name="radio" type="radio" />
 
-      <label>
-        <input checked id="input-checked-radio" name="checked-radio" type="radio" />
-        Checked Radio Button
-      </label>
+      <label for="input-checked-radio">Checked Radio Button</label>
+      <input checked id="input-checked-radio" name="checked-radio" type="radio" />
 
       <fieldset>
         <legend>Beverage Size</legend>
 
-        <label>
-          <input id="small" name="beverage" type="radio" />
-          Small
-        </label>
+        <label for="small">Small</label>
+        <input id="small" name="beverage" type="radio" />
 
-        <label>
-          <input id="medium" name="beverage" type="radio" />
-          Medium
-        </label>
+        <label for="medium">Medium</label>
+        <input id="medium" name="beverage" type="radio" />
 
-        <label>
-          <input id="large" name="beverage" type="radio" />
-          Large
-        </label>
+        <label for="large">Large</label>
+        <input id="large" name="beverage" type="radio" />
 
-        <label>
-          <input id="x-large" name="beverage" type="radio" />
-          Extra Large
-        </label>
+        <label for="x-large">Extra Large</label>
+        <input id="x-large" name="beverage" type="radio" />
+
       </fieldset>
     </fieldset>
     <!-- End of #subsection-checkboxes-and-radios -->
@@ -1113,60 +1047,39 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
       <!-- Start of #subsection-input -->
       <div id="subsection-input" role="region" aria-labelledby="subtitle-input">
         <h4 id="subtitle-input">Input</h4>
-        <label>
-          Required
-          <input required id="input-required" name="required" type="text" />
-        </label>
 
-        <label>
-          Readonly
-          <input readonly value="Read Only" id="input-readonly" name="readonly" type="text" />
-        </label>
+        <label for="input-required">Required</label>
+        <input required id="input-required" name="required" type="text" />
 
-        <label>
-          Loading
-          <input id="input-loading" name="loading" aria-busy="true" data-input-state="loading" type="text" />
-        </label>
+        <label for="input-readonly">Readonly</label>
+        <input readonly value="Read Only" id="input-readonly" name="readonly" type="text" />
 
-        <label>
-          Disabled
-          <input disabled id="input-disabled" name="disabled" type="text" />
-        </label>
+        <label for="input-loading">Loading</label>
+        <input id="input-loading" name="loading" aria-busy="true" data-input-state="loading" type="text" />
 
-        <label>
-          Valid
-          <input id="input-valid" name="valid" aria-invalid="false" type="text" />
-        </label>
+        <label for="input-disabled">Disabled</label>
+        <input disabled id="input-disabled" name="disabled" type="text" />
 
-        <label>
-          Invalid
-          <input id="input-invalid" name="invalid" aria-invalid="true" type="text" />
-        </label>
+        <label for="input-valid">Valid</label>
+        <input id="input-valid" name="valid" aria-invalid="false" type="text" />
 
-        <label>
-          Warning
-          <input id="input-warning" name="warning" data-input-state="warning" type="text" />
-        </label>
+        <label for="input-invalid">Invalid</label>
+        <input id="input-invalid" name="invalid" aria-invalid="true" type="text" />
 
-        <label>
-          Search with Autosave
-          <input autosave id="input-search-with-autosave" name="search-with-autosave" type="search" />
-        </label>
+        <label for="input-warning">Warning</label>
+        <input id="input-warning" name="warning" data-input-state="warning" type="text" />
 
-        <label>
-          Input with Pattern Validation
-          <input pattern="[0-9]{13,16}" id="input-pattern" name="pattern" type="number" />
-        </label>
+        <label for="input-search-with-autosave">Search with Autosave</label>
+        <input autosave id="input-search-with-autosave" name="search-with-autosave" type="search" />
 
-        <label>
-          Minlength
-          <input id="input-minlength" name="minlength" minlength="5" type="number" />
-        </label>
+        <label for="input-pattern">Input with Pattern Validation</label>
+        <input pattern="[0-9]{13,16}" id="input-pattern" name="pattern" type="number" />
 
-        <label>
-          Maxlength
-          <input id="input-maxlength" name="maxlength" maxlength="10" type="number" />
-        </label>
+        <label for="input-minlength">Minlength</label>
+        <input id="input-minlength" name="minlength" minlength="5" type="number" />
+
+        <label for="input-maxlength">Maxlength</label>
+        <input id="input-maxlength" name="maxlength" maxlength="10" type="number" />
       </div>
       <!-- End of #subsection-input -->
 
@@ -1196,215 +1109,128 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
         <h3 id="subtitle-autocomplete">Autocomplete</h3>
       </legend>
 
-      <label>
-        On (Browser automatically completes)
-        <input id="input-autocomplete-on" name="autocomplete-on" autocomplete="on" type="text" />
-      </label>
+      <label for="input-autocomplete-on">On (Browser automatically completes)</label>
+      <input id="input-autocomplete-on" name="autocomplete-on" autocomplete="on" type="text" />
 
-      <label>
-        Name (Full name)
-        <input id="input-autocomplete-name" name="autocomplete-name" autocomplete="name" autocorrect="off"
-          type="text" />
-      </label>
+      <label for="input-autocomplete-name">Name (Full name)</label>
+      <input id="input-autocomplete-name" name="autocomplete-name" autocomplete="name" autocorrect="off" type="text" />
 
-      <label>
-        Honorific Prefix (Mr., Ms., Dr., etc.)
-        <input id="input-autocomplete-honorific-prefix" name="autocomplete-honorific-prefix" autocomplete="honorific-prefix" autocapitalize="on" type="text" />
-      </label>
 
-      <label>
-        Additional Name
-        <input id="input-autocomplete-additional-name" name="autocomplete-additional-name" autocomplete="additional-name" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-honorific-prefix">Honorific Prefix (Mr., Ms., Dr., etc.)</label>
+      <input id="input-autocomplete-honorific-prefix" name="autocomplete-honorific-prefix" autocomplete="honorific-prefix" autocapitalize="on" type="text" />
 
-      <label>
-        Family Name
-        <input id="input-autocomplete-family-name" name="autocomplete-family-name" autocomplete="family-name" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-additional-name">Additional Name</label>
+      <input id="input-autocomplete-additional-name" name="autocomplete-additional-name" autocomplete="additional-name" autocorrect="off" type="text" />
 
-      <label>
-        Honorific Suffix (Jr., II, etc.)
-        <input id="input-autocomplete-honorific-suffix" name="autocomplete-honorific-suffix" autocomplete="honorific-suffix" autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-family-name">Family Name</label>
+      <input id="input-autocomplete-family-name" name="autocomplete-family-name" autocomplete="family-name" autocorrect="off" type="text" />
 
-      <label>
-        Nickname
-        <input id="input-autocomplete-nickname" name="autocomplete-nickname" autocomplete="nickname" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-honorific-suffix">Honorific Suffix (Jr., II, etc.)</label>
+      <input id="input-autocomplete-honorific-suffix" name="autocomplete-honorific-suffix" autocomplete="honorific-suffix" autocapitalize="on" type="text" />
 
-      <label>
-        Autocomplete Email
-        <input id="input-autocomplete-email" name="autocomplete-email" autocomplete="email" autocapitalize="off"
-          autocorrect="off" spellcheck="false" type="text" />
-      </label>
+      <label for="input-autocomplete-nickname">Nickname</label>
+      <input id="input-autocomplete-nickname" name="autocomplete-nickname" autocomplete="nickname" autocorrect="off" type="text" />
 
-      <label>
-        Username
-        <input id="input-autocomplete-username" name="autocomplete-username" autocomplete="username"
-          autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
-      </label>
+      <label for="input-autocomplete-email">Autocomplete Email</label>
+      <input id="input-autocomplete-email" name="autocomplete-email" autocomplete="email" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
 
-      <label>
-        New Password
-        <input id="input-autocomplete-new-password" name="autocomplete-new-password" autocomplete="new-password"
-          autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
-      </label>
+      <label for="input-autocomplete-username">Username</label>
+      <input id="input-autocomplete-username" name="autocomplete-username" autocomplete="username" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
 
-      <label>
-        Current Password
-        <input id="input-autocomplete-current-password" name="autocomplete-current-password"
-          autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
-      </label>
+      <label for="input-autocomplete-new-password">New Password</label>
+      <input id="input-autocomplete-new-password" name="autocomplete-new-password" autocomplete="new-password" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
 
-      <label>
-        Organization Title
-        <input id="input-autocomplete-organization-title" name="autocomplete-organization-title"
-          autocomplete="organization-title" autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-current-password">Current Password</label>
+      <input id="input-autocomplete-current-password" name="autocomplete-current-password" autocomplete="current-password" autocapitalize="off" autocorrect="off" spellcheck="false" type="text" />
 
-      <label>
-        Organization
-        <input id="input-autocomplete-organization" name="autocomplete-organization" autocomplete="organization"
-          autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-organization-title">Organization Title</label>
+      <input id="input-autocomplete-organization-title" name="autocomplete-organization-title" autocomplete="organization-title" autocapitalize="on" type="text" />
 
-      <label>
-        Street Address
-        <input id="input-autocomplete-street-address" name="autocomplete-street-address"
-          autocomplete="shipping street-address" autocorrect="off" type="text" />
-      </label>
 
-      <label>
-        Address Line 1 (Can use address-line1-3)
-        <input id="input-autocomplete-address-line1" name="autocomplete-address-line1" autocomplete="address-line1"
-          autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-organization">Organization</label>
+      <input id="input-autocomplete-organization" name="autocomplete-organization" autocomplete="organization" autocapitalize="on" type="text" />
 
-      <label>
-        Address Level 4 (Can use address-level4-1)
-        <input id="input-autocomplete-address-level4" name="autocomplete-address-level4" autocomplete="address-level4"
-          autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-street-address">Street Address</label>
+      <input id="input-autocomplete-street-address" name="autocomplete-street-address" autocomplete="shipping street-address" autocorrect="off" type="text" />
 
-      <label>
-        Country
-        <input id="input-autocomplete-country" name="autocomplete-country" autocomplete="country" type="text" />
-      </label>
+      <label for="input-autocomplete-address-line1">Address Line 1 (Can use address-line1-3)</label>
+      <input id="input-autocomplete-address-line1" name="autocomplete-address-line1" autocomplete="address-line1" autocorrect="off" type="text" />
 
-      <label>
-        Country Name
-        <input id="input-autocomplete-country-name" name="autocomplete-country-name" autocomplete="country-name" type="text" />
-      </label>
+      <label for="input-autocomplete-address-level4">Address Level 4 (Can use address-level4-1)</label>
+      <input id="input-autocomplete-address-level4" name="autocomplete-address-level4" autocomplete="address-level4" autocorrect="off" type="text" />
 
-      <label>
-        Postal Code
-        <input novalidate id="input-autocomplete-postal-code" name="autocomplete-postal-code" autocomplete="shipping postal-code" autocorrect="off" type="number" />
-      </label>
+      <label for="input-autocomplete-country">Country</label>
+      <input id="input-autocomplete-country" name="autocomplete-country" autocomplete="country" type="text" />
 
-      <label>
-        CC Name (Full name as given on the payment instrument)
-        <input id="input-autocomplete-cc-name" name="autocomplete-cc-name" autocomplete="cc-name" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-country-name">Country Name</label>
+      <input id="input-autocomplete-country-name" name="autocomplete-country-name" autocomplete="country-name" type="text" />
 
-      <label>
-        CC Given Name
-        <input id="input-autocomplete-cc-given-name" name="autocomplete-cc-given-name" autocomplete="cc-given-name" autocorrect="off" type="text" />
-      </label>
 
-      <label>
-        CC Additional Name
-        <input id="input-autocomplete-cc-additional-name" name="autocomplete-cc-additional-name" autocomplete="cc-additional-name" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-postal-code">Postal Code</label>
+      <input novalidate id="input-autocomplete-postal-code" name="autocomplete-postal-code" autocomplete="shipping postal-code" autocorrect="off" type="number" />
 
-      <label>
-        CC Family Name
-        <input id="input-autocomplete-cc-family-name" name="autocomplete-cc-family-name" autocomplete="cc-family-name" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-cc-name">CC Name (Full name as given on the payment instrument)</label>
+      <input id="input-autocomplete-cc-name" name="autocomplete-cc-name" autocomplete="cc-name" autocorrect="off" type="text" />
 
-      <label>
-        CC Number
-        <input novalidate id="input-autocomplete-cc-number" name="autocomplete-cc-number" pattern="\d*" autocomplete="cc-number" autocorrect="off" type="tel" />
-      </label>
+      <label for="input-autocomplete-cc-given-name">CC Given Name</label>
+      <input id="input-autocomplete-cc-given-name" name="autocomplete-cc-given-name" autocomplete="cc-given-name" autocorrect="off" type="text" />
 
-      <label>
-        CC Exp
-        <input novalidate id="input-autocomplete-cc-exp" name="autocomplete-cc-exp" pattern="\d*" autocomplete="cc-exp" autocorrect="off" type="tel" />
-      </label>
+      <label for="input-autocomplete-cc-additional-name">CC Additional Name</label>
+      <input id="input-autocomplete-cc-additional-name" name="autocomplete-cc-additional-name" autocomplete="cc-additional-name" autocorrect="off" type="text" />
 
-      <label>
-        CC Exp Month
-        <input novalidate id="input-autocomplete-cc-exp-month" name="autocomplete-cc-exp-month" pattern="\d*" autocomplete="cc-exp-month" autocorrect="off" type="tel" />
-      </label>
+      <label for="input-autocomplete-cc-family-name">CC Family Name</label>
+      <input id="input-autocomplete-cc-family-name" name="autocomplete-cc-family-name" autocomplete="cc-family-name" autocorrect="off" type="text" />
 
-      <label>
-        CC Exp Year
-        <input novalidate id="input-autocomplete-cc-exp-year" name="autocomplete-cc-exp-year" pattern="\d*" autocomplete="cc-exp-year" autocorrect="off" type="tel" />
-      </label>
+      <label for="input-autocomplete-cc-number">CC Number</label>
+      <input novalidate id="input-autocomplete-cc-number" name="autocomplete-cc-number" pattern="\d*" autocomplete="cc-number" autocorrect="off" type="tel" />
 
-      <label>
-        CC CSC (Security code)
-        <input novalidate id="input-autocomplete-cc-csc" name="autocomplete-cc-csc" pattern="\d*" autocomplete="cc-csc" autocorrect="off" type="tel" />
-      </label>
+      <label for="input-autocomplete-cc-exp">CC Exp</label>
+      <input novalidate id="input-autocomplete-cc-exp" name="autocomplete-cc-exp" pattern="\d*" autocomplete="cc-exp" autocorrect="off" type="tel" />
 
-      <label>
-        CC Type (Visa, American Express, etc.)
-        <input id="input-autocomplete-cc-type" name="autocomplete-cc-type" autocomplete="cc-type" autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-cc-exp-month">CC Exp Month</label>
+      <input novalidate id="input-autocomplete-cc-exp-month" name="autocomplete-cc-exp-month" pattern="\d*" autocomplete="cc-exp-month" autocorrect="off" type="tel" />
 
-      <label>
-        Transaction Currency
-        <input id="input-autocomplete-transaction-currency" name="autocomplete-transaction-currency" autocomplete="transaction-currency" autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-cc-exp-year">CC Exp Year</label>
+      <input novalidate id="input-autocomplete-cc-exp-year" name="autocomplete-cc-exp-year" pattern="\d*" autocomplete="cc-exp-year" autocorrect="off" type="tel" />
 
-      <label>
-        Transaction Amount
-        <input id="input-autocomplete-transaction-amount" name="autocomplete-transaction-amount" pattern="\d*" autocomplete="transaction-amount" type="number" />
-      </label>
+      <label for="input-autocomplete-cc-csc">CC CSC (Security code)</label>
+      <input novalidate id="input-autocomplete-cc-csc" name="autocomplete-cc-csc" pattern="\d*" autocomplete="cc-csc" autocorrect="off" type="tel" />
 
-      <label>
-        Language (Valid BCP 47 language tag)
-        <input id="input-autocomplete-language" name="autocomplete-language" autocomplete="language" autocapitalize="on" autocorrect="off" type="text" />
-      </label>
+      <label for="input-autocomplete-cc-type">CC Type (Visa, American Express, etc.)</label>
+      <input id="input-autocomplete-cc-type" name="autocomplete-cc-type" autocomplete="cc-type" autocapitalize="on" type="text" />
 
-      <label>
-        Bday
-        <input id="input-autocomplete-bday" name="autocomplete-bday" autocomplete="bday" autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-transaction-currency">Transaction Currency</label>
+      <input id="input-autocomplete-transaction-currency" name="autocomplete-transaction-currency" autocomplete="transaction-currency" autocapitalize="on" type="text" />
 
-      <label>
-        Bday-day
-        <input id="input-autocomplete-bday-day" name="autocomplete-bday-day" pattern="\d*" autocomplete="bday-day" type="tel" />
-      </label>
+      <label for="input-autocomplete-transaction-amount" >Transaction Amount</label>
+      <input id="input-autocomplete-transaction-amount" name="autocomplete-transaction-amount" pattern="\d*" autocomplete="transaction-amount" type="number" />
 
-      <label>
-        Bday-month
-        <input id="input-autocomplete-bday-month" name="autocomplete-bday-month" pattern="\d*" autocomplete="bday-month" type="tel" />
-      </label>
+      <label for="input-autocomplete-language">Language (Valid BCP 47 language tag)</label>
+      <input id="input-autocomplete-language" name="autocomplete-language" autocomplete="language" autocapitalize="on" autocorrect="off" type="text" />
 
-      <label>
-        Bday-year
-        <input id="input-autocomplete-bday-year" name="autocomplete-bday-year" pattern="\d*" autocomplete="bday-year" type="tel" />
-      </label>
+      <label for="input-autocomplete-bday">Bday</label>
+      <input id="input-autocomplete-bday" name="autocomplete-bday" autocomplete="bday" autocapitalize="on" type="text" />
 
-      <label>
-        Sex (Gender identity; free-form text, no newlines)
-        <input id="input-autocomplete-sex" name="autocomplete-sex" autocomplete="sex" autocapitalize="on" type="text" />
-      </label>
+      <label for="input-autocomplete-bday-day">Bday-day</label>
+      <input id="input-autocomplete-bday-day" name="autocomplete-bday-day" pattern="\d*" autocomplete="bday-day" type="tel" />
 
-      <label>
-        Autocomplete URL
-        <input id="input-autocomplete-url" name="autocomplete-url" autocomplete="url" autocapitalize="off" autocorrect="off" spellcheck="false" type="url" />
-      </label>
+      <label for="input-autocomplete-bday-month">Bday-month</label>
+      <input id="input-autocomplete-bday-month" name="autocomplete-bday-month" pattern="\d*" autocomplete="bday-month" type="tel" />
 
-      <label>
-        One-time Code
-        <input id="input-one-time-code" name="one-time-code" autocomplete="one-time-code" autocapitalize="off" autocorrect="off" spellcheck="false" type="number" />
-      </label>
+      <label for="input-autocomplete-bday-year">Bday-year</label>
+      <input id="input-autocomplete-bday-year" name="autocomplete-bday-year" pattern="\d*" autocomplete="bday-year" type="tel" />
 
-      <label>
-        Photo
-        <input id="input-autocomplete-photo" name="autocomplete-photo" autocomplete="photo" type="file" />
-      </label>
+      <label for="input-autocomplete-sex">Sex (Gender identity; free-form text, no newlines)</label>
+      <input id="input-autocomplete-sex" name="autocomplete-sex" autocomplete="sex" autocapitalize="on" type="text" />
+
+      <label for="input-autocomplete-url">Autocomplete URL</label>
+      <input id="input-autocomplete-url" name="autocomplete-url" autocomplete="url" autocapitalize="off" autocorrect="off" spellcheck="false" type="url" />
+
+      <label for="input-one-time-code">One-time Code</label>
+      <input id="input-one-time-code" name="one-time-code" autocomplete="one-time-code" autocapitalize="off" autocorrect="off" spellcheck="false" type="number" />
+
+      <label for="input-autocomplete-photo">Photo</label>
+      <input id="input-autocomplete-photo" name="autocomplete-photo" autocomplete="photo" type="file" />
 
       <h4 id="notes-autocomplete">Notes:</h4>
       <p>
