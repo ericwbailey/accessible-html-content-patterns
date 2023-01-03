@@ -24,6 +24,6 @@
   ],
   "devDependencies": {
     "handlebars": "^4.0.5",
-    "onchange": "^3.0.2"
+    "onchange": "^7.1.0"
   }
 }
