@@ -75,10 +75,13 @@
           <small>Avoid nesting <code translate="no">input</code> elements inside of <code translate="no">label</code> elements for better support for <a rel="external noopener" href="https://www.nuance.com/dragon.html">Dragon Speech Recognition</a>.</small>
         </li>
         <li>
-          <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
+          <small>Add <code translate="no">autocomplete="new-password"</code> to <code translate="no">&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
         </li>
         <li>
-          <small><code>&lt;input type="number"&gt;</code> has <a rel="external noopener" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous issues with Dragon Naturally Speaking and NVDA</a>.</small>
+          <small><code translate="no">&lt;input type="number"&gt;</code> has <a rel="external noopener" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous issues with Dragon Naturally Speaking and NVDA</a>.</small>
+        </li>
+        <li>
+          <small>Using <code translate="no">&lt;input type="password"&gt;</code> needs to also have <code translate="no">spellcheck="false"</code> declared on it to <a rel="external noopener" href="https://www.otto-js.com/news/article/chrome-and-edge-enhanced-spellcheck-features-expose-pii-even-your-passwords">avoid a security risk</a>.</code></small>
         </li>
       </ul>
     </fieldset>
@@ -149,7 +152,7 @@
 
       <h4 id="notes-select">Notes:</h4>
       <p>
-        <small>The <code>optgroup</code> element has <a rel="external noopener"
+        <small>The <code translate="no">optgroup</code> element has <a rel="external noopener"
             href="https://a11ysupport.io/tests/tech__html__select">mixed support with assistive technology</a>.</small>
       </p>
     </fieldset>

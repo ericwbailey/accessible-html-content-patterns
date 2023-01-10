@@ -493,7 +493,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
   <h4 id="notes-details">Notes:</h4>
   <p>
-    <small>The <code translate="no">details</code> element is currently not supported by Microsoft Edge or Internet Explorer. These browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code translate="no">open</code> attribute was applied.</small>
+    <small>The <code translate="no">details</code> element is currently not supported by Internet Explorer. This browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code translate="no">open</code> attribute was applied.</small>
   </p>
   <!-- End of #subsection-details -->
 
@@ -535,6 +535,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <img
     src="http://placehold.it/500x500?text=Lazy-Loaded+Image+Example"
     loading="lazy"
+    decoding="async"
     width="500"
     height="500"
     alt="Lazy-loaded Image" />
@@ -582,10 +583,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <h3 id="notes-inline-svg">Notes:</h3>
   <ul>
     <li>
+      <small>Use <code translate="no">decoding="async"</code> in conjunction with <code translate="no">loading="lazy"</code> for better performance for browsers that support it.</small>
+    </li>
+    <li>
       <small>Be sure to provide values for the <code translate="no">height</code> and <code translate="no">width</code> attributes so <abbr>SVGs</abbr> won't expand to fill the page if styles don't load.</small>
     </li>
     <li>
-      <a>Different implementations of <abbr>SVG</abbr> have different approaches for being made accessible. Reference these articles by <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/"></a>Heather Migliorisi</a> and <a rel="external noopener" href="https://www.deque.com/blog/creating-accessible-svgs/">Carie Fisher</a>.</small>
+      <small>Different implementations of <abbr>SVG</abbr> have different approaches for being made accessible. Reference these articles by <a rel="external noopener" href="https://css-tricks.com/accessible-svgs/">Heather Migliorisi</a> and <a rel="external noopener" href="https://www.deque.com/blog/creating-accessible-svgs/">Carie Fisher</a>.</small></small>
     </li>
     <li>
       <small>Add whitespace around the <code translate="no">use</code> element in a <abbr>SVG</abbr> icon system to <a rel="external noopener" href="http://simplyaccessible.com/article/7-solutions-svgs/#acc-heading-5">prevent a focus bug with Safari 10</a>.</small>
@@ -809,10 +813,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
           <small>Avoid nesting <code translate="no">input</code> elements inside of <code translate="no">label</code> elements for better support for <a rel="external noopener" href="https://www.nuance.com/dragon.html">Dragon Speech Recognition</a>.</small>
         </li>
         <li>
-          <small>Add <code translate="no">autocomplete="new-password"</code> to <code>&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
+          <small>Add <code translate="no">autocomplete="new-password"</code> to <code translate="no">&lt;input&gt;</code> elements with a type of <code translate="no">password</code> to <a rel="external noopener" href="https://twitter.com/mmatuzo/status/1189041007117176832">make supporting browsers suggest secure passwords</a>.</small>
         </li>
         <li>
-          <small><code>&lt;input type="number"&gt;</code> has <a rel="external noopener" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous issues with Dragon Naturally Speaking and NVDA</a>.</small>
+          <small><code translate="no">&lt;input type="number"&gt;</code> has <a rel="external noopener" href="https://technology.blog.gov.uk/2020/02/24/why-the-gov-uk-design-system-team-changed-the-input-type-for-numbers/">numerous issues with Dragon Naturally Speaking and NVDA</a>.</small>
+        </li>
+        <li>
+          <small>Using <code translate="no">&lt;input type="password"&gt;</code> needs to also have <code translate="no">spellcheck="false"</code> declared on it to <a rel="external noopener" href="https://www.otto-js.com/news/article/chrome-and-edge-enhanced-spellcheck-features-expose-pii-even-your-passwords">avoid a security risk</a>.</code></small>
         </li>
       </ul>
     </fieldset>
@@ -883,7 +890,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
 
       <h4 id="notes-select">Notes:</h4>
       <p>
-        <small>The <code>optgroup</code> element has <a rel="external noopener"
+        <small>The <code translate="no">optgroup</code> element has <a rel="external noopener"
             href="https://a11ysupport.io/tests/tech__html__select">mixed support with assistive technology</a>.</small>
       </p>
     </fieldset>
