@@ -4,8 +4,10 @@
   "homepage": "https://github.com/ericwbailey/accessible-html-content-patterns",
   "version": "2.0.4",
   "license": "MIT",
-  "author": "Eric Bailey <eric.w.bailey@gmail.com> (http://ericwbailey.design/)",
-  "contributors": "Scott Doxey <hello@scottdoxey.com> (https://www.scottdoxey.com/)",
+  "author": "Eric Bailey <eric.w.bailey@gmail.com> (http://ericwbailey.website/)",
+  "contributors": [
+    "Scott Doxey <hello@scottdoxey.com> (https://www.scottdoxey.com/)"
+  ],
   "main": "docs/index.html",
   "repository": {
     "type": "git",
