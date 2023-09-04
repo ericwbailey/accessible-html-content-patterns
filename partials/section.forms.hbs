@@ -29,8 +29,10 @@
       <label for="input-number" >Number</label>
       <input id="input-number" type="text" inputmode="numeric" dir="auto" pattern="[0-9]*" />
 
-      <label for="input-search">Search</label>
-      <input id="input-search" name="search" spellcheck="false" dir="auto" type="search" />
+      <search>
+        <label for="input-search">Search</label>
+        <input id="input-search" name="search" spellcheck="false" dir="auto" type="search" />
+      </search>
 
       <label for="input-date">Date</label>
       <input id="input-date" name="date" type="date" />
@@ -355,8 +357,10 @@
         <label for="input-warning">Warning</label>
         <input id="input-warning" name="warning" data-input-state="warning" dir="auto" type="text" />
 
-        <label for="input-search-with-autosave">Search with Autosave</label>
-        <input autosave id="input-search-with-autosave" name="search-with-autosave" dir="auto" type="search" />
+        <search>
+          <label for="input-search-with-autosave">Search with Autosave</label>
+          <input autosave id="input-search-with-autosave" name="search-with-autosave" dir="auto" type="search" />
+        </search>
 
         <label for="input-pattern">Input with Pattern Validation</label>
         <input pattern="[0-9]{13,16}" id="input-pattern" name="pattern" dir="auto" type="number" />
