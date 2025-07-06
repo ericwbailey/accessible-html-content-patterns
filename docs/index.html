@@ -166,7 +166,7 @@
         "Yes, mother, yes, thank-you, I'm getting up now."
       </p>
       <footer>
-        <cite>Gregor Samsa</cite>
+        Gregor Samsa
       </footer>
     </blockquote>
     <p>
@@ -200,6 +200,10 @@
         He was still hurriedly thinking all this through, unable to decide to get out of the bed, when the clock struck quarter to seven. There was a cautious knock at the door near his head. "Gregor", somebody called - it was his mother - "it's quarter to seven. Didn't you want to go somewhere?
       </p>
     </a>
+    <h4 id="notes-lists">Notes:</h4>
+    <p>
+      <small><a href="https://werd.io/2024/browsers-imply-noopener-for-links-in-new-tab" rel="external noopener">Browsers will imply <code translate="no">noopener</code></a> for links that open in a new window/tab.</small>
+    </p>
   </div>
   <!-- End of #subsection-links -->
 
@@ -488,13 +492,14 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <h3 id="subsection-details">Details</h3>
   <details>
     <summary>What payment options do you accept?</summary>
-      <p>We accept cash, Visa, American Express, money orders, and personal checks.</p>
+    <p>We accept cash, Visa, American Express, money orders, and personal checks.</p>
   </details>
 
   <h4 id="notes-details">Notes:</h4>
-  <p>
-    <small>The <code translate="no">details</code> element is currently not supported by Internet Explorer. This browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code translate="no">open</code> attribute was applied.</small>
-  </p>
+  <ul>
+    <li><small>The <code translate="no">details</code> element is currently not supported by Internet Explorer. Browsers will <a rel="external noopener" href="https://css-tricks.com/quick-reminder-that-details-summary-is-the-easiest-way-ever-to-make-an-accordion/">display the content in an opened state</a>, as if the <code translate="no">open</code> attribute was applied.</small></li>
+    <li><small>Declaring <a href="https://developer.chrome.com/docs/css-ui/hidden-until-found" rel="external noopener"><code translate="no">hidden=until-found</code> on the parent hidden element to make it discoverable</a> by browser search.</small></li>
+  </ul>
   <!-- End of #subsection-details -->
 
   <!-- Start of #subsection-dialog -->
@@ -526,14 +531,14 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <!-- Start of #subsection-image -->
   <h3 id="subsection-image">Image</h3>
   <img
-    src="http://placehold.it/600x400?text=Image+Example"
+    src="https://dummyimage.com/600x400?text==Image+Example"
     alt="Image Example" />
   <!-- End of #subsection-image -->
 
   <!-- Start of #subsection-broken-image -->
   <h3 id="subsection-lazy-loaded-image">Lazy-loaded Image</h3>
   <img
-    src="http://placehold.it/500x500?text=Lazy-Loaded+Image+Example"
+    src="http://dummyimage.com/500x500?text=Lazy-Loaded+Image+Example"
     loading="lazy"
     decoding="async"
     width="500"
@@ -552,7 +557,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <h3 id="subsection-figure-with-caption">Figure with Caption</h3>
   <figure>
     <img
-      src="http://placehold.it/400x250?text=Figure+Example"
+      src="http://dummyimage.com/400x250?text=Figure+Example"
       alt="Figure Example" />
     <figcaption>
       An example figure caption.
@@ -602,13 +607,13 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <picture>
     <source
       media="(min-width: 40em)"
-      srcset="http://placehold.it/800x450/7ED321/ffffff/?text=1x+Source+w/Breakpoint+Example 1x,
-              http://placehold.it/800x600/7ED321/ffffff/?text=2x+Source+w/Breakpoint+Example 2x" />
+      srcset="http://dummyimage.com/800x450/7ED321/ffffff/?text=1x+Source+w/Breakpoint+Example 1x,
+              http://dummyimage.com/800x600/7ED321/ffffff/?text=2x+Source+w/Breakpoint+Example 2x" />
     <source
-      srcset="http://placehold.it/500x250/F5A623/ffffff/?text=1x+Source+Example 1x,
-              http://placehold.it/500x250/F5A623/ffffff/?text=2x+Source+Example 2x" />
+      srcset="http://dummyimage.com/500x250/F5A623/ffffff/?text=1x+Source+Example 1x,
+              http://dummyimage.com/500x250/F5A623/ffffff/?text=2x+Source+Example 2x" />
     <img
-      src="http://placehold.it/600x400?text=Img+Fallback"
+      src="https://dummyimage.com/600x400?text==Img+Fallback"
       alt="Picture Element" />
   </picture>
   <!-- End of #subsection-picture -->
@@ -616,11 +621,11 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <!-- Start of #subsection-image-with-srcset-and-sizes -->
   <h3 id="subsection-image-with-srcset-and-sizes">Image with Srcset and Sizes</h3>
   <img
-    srcset="http://placehold.it/1024x768/7ED321/ffffff/?text=Large 1024w,
-            http://placehold.it/1024x768/F5A623/ffffff/?text=Medium 640w,
-            http://placehold.it/320x240/50E3C2/ffffff/?text=Small 320w"
+    srcset="http://dummyimage.com/1024x768/7ED321/ffffff/?text=Large 1024w,
+            http://dummyimage.com/1024x768/F5A623/ffffff/?text=Medium 640w,
+            http://dummyimage.com/320x240/50E3C2/ffffff/?text=Small 320w"
     sizes="(min-width: 36em) 50vw, 100vw"
-    src="http://placehold.it/600x400?text=Img+Fallback"
+    src="https://dummyimage.com/600x400?text==Img+Fallback"
     alt="Image with Srcset and Sizes Example" />
   <!-- End of #subsection-image-with-srcset-and-sizes -->
 
@@ -663,7 +668,7 @@ drwxr-xr-x 9 eric staff   306 Mar 24 13:36 .git/
   <h3 id="subsection-video">Video</h3>
   <video
     controls
-    poster="http://placehold.it/854x480?text=Video+Poster">
+    poster="http://dummyimage.com/854x480?text=Video+Poster">
     <source
       src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4"
       type="video/mp4" />
