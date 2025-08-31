@@ -64,6 +64,7 @@ Contributions are welcome!
 - [CSS-Tricks](https://css-tricks.com/)' [Everything You Ever Wanted to Know About inputmode](https://css-tricks.com/everything-you-ever-wanted-to-know-about-inputmode/)
 - [Cloud Four](https://cloudfour.com/)'s [Autofill: What web devs should know, but don’t](https://cloudfour.com/thinks/autofill-what-web-devs-should-know-but-dont/)
 - [Alex Holachek](https://github.com/aholachek)'s [Build a Better Mobile Input](https://better-mobile-inputs.netlify.app/)
+- [Jim Nielsen](https://www.jim-nielsen.com/)'s [A Few Things About the Anchor Element’s href You Might Not Have Known](https://blog.jim-nielsen.com/2025/href-value-possibilities/)
 
 
 ## License
